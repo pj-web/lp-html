@@ -1,5 +1,13 @@
 "use strict"
 
+window.onload = function () {
+    const parallax = document.querySelector('.hero');
+
+    if (parallax) {
+        
+    }
+}
+
 var prices = {
 	RU: {
 		country: 'Россия',

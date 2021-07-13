@@ -596,6 +596,7 @@ figure.anim-items.active {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 60px 20px;
 }
 
 .header {
@@ -770,12 +771,25 @@ figure.anim-items.active {
   text-shadow: 0px 0px 30px white;
 }
 
-.hero {
-  background-color: #FFCBFF;
+.wrapper {
+  min-height: 100%;
 }
 
-.hero__inner {
-  padding: 120px 0 60px;
+.hero {
+  min-height: 100vh;
+}
+
+.hero__body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero__columns {
@@ -785,86 +799,79 @@ figure.anim-items.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px 0;
 }
 
-.hero__text {
+.hero__column {
   width: 50%;
-  text-align: left;
 }
 
-.hero__text h1 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 36px;
-  color: #FF4141;
-  letter-spacing: -0.02em;
-  margin: 0 0 30px 0;
-  -webkit-transform: translate(0px, 120%);
-      -ms-transform: translate(0px, 120%);
-          transform: translate(0px, 120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+.hero__images {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  z-index: 1;
 }
 
-.hero__text h1.active {
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  opacity: 1;
+.images-hero__item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.hero__text h1 span {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 32px;
-  color: #2A2A2A;
+.images-hero__clouds,
+.images-hero__mountains,
+.images-hero__human {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
 }
 
-.hero__text > .button {
-  text-align: left;
+.images-hero__clouds {
+  background: url("../images/clouds.jpg") top/cover no-repeat;
+  top: 0;
 }
 
-.hero__list {
-  margin: 0 0 30px 30px;
+.images-hero__mountains {
+  background: url("../images/mountains.png") top/cover no-repeat;
+  top: 15%;
+  z-index: 2;
 }
 
-.hero__btn-1 {
-  margin: 20px 0 40px 10px;
-  opacity: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.hero__btn-1.active {
-  opacity: 1;
-  -webkit-transition: all 0.8s ease 0.4s;
-  -o-transition: all 0.8s ease 0.4s;
-  transition: all 0.8s ease 0.4s;
-}
-
-.hero__btn-2 {
-  opacity: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.hero__btn-2.active {
-  opacity: 1;
-  -webkit-transition: all 0.8s ease 0.4s;
-  -o-transition: all 0.8s ease 0.4s;
-  transition: all 0.8s ease 0.4s;
-}
-
-.hero__image {
-  width: 50%;
+.images-hero__human {
+  background: url("../images/human.png") top/cover no-repeat;
+  top: 45%;
+  z-index: 3;
 }
 
 .description {
-  background-color: #fff;
+  background-color: #0b1d26;
+  position: relative;
+  z-index: 2;
+}
+
+.description::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  -webkit-transform: translate(0px, -100%);
+      -ms-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(11, 29, 38, 0)), to(#0b1d26));
+  background: -o-linear-gradient(top, rgba(11, 29, 38, 0) 5%, #0b1d26 100%);
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, #0b1d26 100%);
 }
 
 .description__inner {
@@ -5021,5 +5028,11 @@ ul li.footer__item::before {
   .contacts__map {
     max-width: 280px;
     max-height: 200px;
+  }
+}
+
+@media (max-aspect-ratio: 3 / 2) {
+  .images-hero__human {
+    background-position: 20% top;
   }
 }
