@@ -621,6 +621,7 @@ figure.anim-items {
         height: 100%;
         top: 0;
         left: 0;
+        background-color: #a6cafd;
         
     }
 
@@ -684,19 +685,21 @@ figure.anim-items {
 
      
     &__clouds {
-        background: url('../images/clouds.jpg') top / cover no-repeat;
+        background: url('../images/hero-clouds.png') top / cover no-repeat;
         top: 0;
+        z-index: 2;
+        opacity: 90%;
     }
 
     &__mountains {
-        background: url('../images/mountains.png') top / cover no-repeat;
-        top: 15%;
-        z-index: 2;
+        background: url('../images/hero-mountains.png') top / cover no-repeat;
+        top: 0;
+        z-index: 1;
     }
 
     &__human {
-        background: url('../images/human.png') top / cover no-repeat;
-        top: 45%;
+        background: url('../images/hero-human.png') top / cover no-repeat;
+        top: -5%;
         z-index: 3;
     }
 }
