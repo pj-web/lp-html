@@ -15,7 +15,7 @@ window.onload = function () {
         const forHuman = 10;
 
         // Скорость анимации
-        const speed = 0.05;
+        const speed = 0.01;
 
         // Объявление переменных 
         let positionX = 0, positionY = 0;
@@ -52,8 +52,35 @@ window.onload = function () {
             coordYprocent = coordY / parallaxHeight * 100;
 
         });
+
+        // Parallax при скроле
+
+        let thresholdSets = [];
+        for (let i = 0; i <=1.0; i += 0.005) {
+            thresholdSets.push(i);
+        }
+        const callback = function (entries, observer) {
+            const scrollTopProcent = window.pageYOffset / parallax.offsetHeight * 100;
+            setParallaxItemsStyle(scrollTopProcent);
+        };
+        const observer = new IntersectionObserver(callback, {
+            threshold: thresholdSets
+        });
+
+        observer.observe(document.querySelector('.description'));
+
+        function setParallaxItemsStyle(scrollTopProcent) {
+            content.style.cssText = `transform: translate(0%,-${scrollTopProcent / 9}%);`;
+            // clouds.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 10}%);`;
+            mountains.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 6}%);`;
+            // human.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 3}%);`;
+        }
     }
 }
+
+
+
+
 
 var prices = {
 	RU: {

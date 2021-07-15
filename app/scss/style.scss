@@ -12,16 +12,24 @@
 // @import "fonts";
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url("../fonts/Montserrat-Regular.woff2"), url("../fonts/Montserrat-Regular.woff");
+    font-family: 'PT Sans';
+    src: url("../fonts/PTSans-Regular.woff2"), url("../fonts/PTSans-Regular.woff");
     font-weight: 400;
     font-display: swap;
     font-style: normal;
 }
 
 @font-face {
+    font-family: 'PT Sans';
+    src: url("../fonts/PTSans-Italic.woff2"), url("../fonts/PTSans-Italic.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
     font-family: 'Montserrat';
-    src: url("../fonts/Montserrat-Bold.woff2"), url("../fonts/Montserrat-Bold.woff");
+    src: url("../fonts/PTSans-Bold.woff2"), url("../fonts/PTSans-Bold.woff");
     font-weight: 700;
     font-display: swap;
     font-style: normal;
@@ -29,10 +37,10 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url("../fonts/Montserrat-Black.woff2"), url("../fonts/Montserrat-Black.woff");
-    font-weight: 800;
+    src: url("../fonts/PTSans-BoldItalic.woff2"), url("../fonts/PTSans-BoldItalic.woff");
+    font-weight: 700;
     font-display: swap;
-    font-style: normal;
+    font-style: italic;
 }
 
 /*Обнуление*/
@@ -50,12 +58,12 @@ html,body{
     width:100%;
     font-size:100%;
     line-height:1.5;
-    font-size:18px;
+    font-size:20px;
     -ms-text-size-adjust:100%;
     -moz-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
-    font-family: 'Montserrat', sans-serif;
-    color: #2A2A2A;
+    font-family: 'PT Sans', sans-serif;
+    color: #2d2d2d;
 }
 body._lock {
     overflow: hidden;
@@ -318,6 +326,10 @@ figure.anim-items {
         opacity: 1;
     }
     
+}
+
+span.red {
+    color: #D61A33;
 }
 
 
@@ -637,13 +649,42 @@ figure.anim-items {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 60px 0;
+        margin: 40px 0;
 
     }
 
-    &__column {
-        width: 50%;
+    &__column-1 {
+        width: 30%;
+        margin: 0 80px 0 0;
     }
+
+    &__column-2 {
+        width: 70%;
+
+        h1 {
+            font-size: 58px;
+            line-height: 36px;
+            margin: 0 0 40px 0;
+            color: #D61A33;
+            font-weight: 700;
+
+            span {
+                font-size: 24px;
+                line-height: 1;
+                color: #2d2d2d;
+
+                span {
+                    
+                        color: #D61A33;
+                    
+                }
+            }
+
+           
+        }
+    }
+
+    
 
     &__images {
         position: absolute;
@@ -797,7 +838,7 @@ figure.anim-items {
 
 
 .description {
-    background-color: #0b1d26;
+    background-color: #fff;
     position: relative;
     z-index: 2;
 
@@ -810,11 +851,20 @@ figure.anim-items {
         width: 100%;
         height: 300px;
         transform: translate(0px, -100%);
-        background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, #0b1d26 100%);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 5%, #ffffff 100%);
     }
 
     &__inner {
         padding: 60px 0 20px;
+    }
+
+    &__description {
+        text-align: center;
+    }
+
+    &__description-text {
+        font-weight: 700;
+        
     }
 
     &__columns {
