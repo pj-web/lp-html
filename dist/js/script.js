@@ -15,7 +15,7 @@ window.onload = function () {
         const forHuman = 10;
 
         // Скорость анимации
-        const speed = 0.01;
+        const speed = 0.005;
 
         // Объявление переменных 
         let positionX = 0, positionY = 0;
