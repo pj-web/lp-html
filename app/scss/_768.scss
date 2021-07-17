@@ -40,7 +40,7 @@
 
         &__logo {
             img {
-                max-width: 60px;
+                max-width: 100px;
             }
         }
     
@@ -188,7 +188,40 @@
             margin: 0 auto 20px;
             width: 85%;
         }
-}
+    }
+
+    .indications {
+
+		&__inner {
+		}
+
+		&__items {
+		}
+
+		&__item {
+            width: 40%;
+		}
+
+		&__item-image {
+		}
+
+		&__item-text {
+		}
+
+		&__columns {
+            flex-direction: column;
+            margin: 0;
+		}
+
+        &__column:first-child {
+            margin-bottom: 40px;
+		}
+
+		&__column {
+		}
+    }
+
+
     
     .buy {
         &__column-1 {
@@ -365,7 +398,7 @@
         }
     
         &__copywright-logo {
-            margin-right: 40px;
+            margin-right: 100px;
         }
     
         &__copywright-text {

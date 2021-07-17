@@ -62,7 +62,7 @@
 
         &__logo {
             img {
-                max-width: 120px;
+                max-width: 80px;
             }
         }
 
@@ -92,7 +92,7 @@
                 margin: 0 20px;
         
             
-            padding: 40px 0 20px;
+            
         }
 
         &__column-1 {
@@ -119,6 +119,39 @@
         &__column-1 {
         }
     }
+
+    .indications {
+
+		&__inner {
+		}
+
+		&__items {
+		}
+
+		&__item {
+            width: 100%;
+		}
+
+		&__item-image {
+		}
+
+		&__item-text {
+		}
+
+		&__columns {
+		}
+
+		&__column {
+            img {
+                margin: 0;
+            }
+		}
+
+        &__column:first-child {
+            margin-bottom: 20px;
+        }
+}
+
 
     .differences {
         &__common-left {
@@ -347,4 +380,51 @@
             margin: 0px 0 10px 0;
 		}
     }
+
+    .footer {
+
+		&__inner {
+		}
+
+		&__columns {
+		}
+
+		&__column {
+		}
+
+		&__list {
+		}
+
+		&__item {
+		}
+
+		&__social {
+		}
+
+		&__social-items {
+		}
+
+		&__social-vk {
+		}
+
+		&__social-ok {
+		}
+
+		&__copywright {
+            display: block;
+            
+		}
+
+		&__copywright-logo {
+            margin: 20px 0;
+            img {
+                max-width: 80px;
+            }
+		}
+
+		&__copywright-text {
+            font-size: 14px;
+		}
+    }
+
 }

@@ -201,7 +201,7 @@ ul {
 ol, ul.anim-items {
     
     li {
-        transform: translate(-120%, 0px);
+        transform: translate(0%, 50%);
         opacity: 0;
         transition: all 0.3s ease 0s;
     }
@@ -259,12 +259,14 @@ ol, ul.anim-items {
 }
 
 img.anim-items {
-    transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
-    transition: all 0.8s ease 0s;
+    // transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+    transform: scale(0);
+    transition: all 1s ease 0s;
     opacity: 0;
     
     &.active {
-        transform: matrix(1, 0, 0, 1, 0, 0);
+        // transform: matrix(1, 0, 0, 1, 0, 0);
+        transform: scale(1);
         opacity: 1;
     }
         
@@ -677,18 +679,7 @@ span.red {
         z-index: 1;
     }
 }
-.container {
-}
-.button {
-}
-.anim-items {
-}
-.anim-hide {
-}
-.popup-link {
-}
-.btn-buy {
-}
+
 .images-hero {
 
     &__item {
@@ -835,7 +826,18 @@ span.red {
         padding: 20px;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 
-       
+        &.anim-items {
+            transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+            transition: all 1s ease 0s;
+            opacity: 0;
+            
+            &.active {
+                transform: matrix(1, 0, 0, 1, 0, 0);
+                opacity: 1;
+            }
+            
+                
+        }
 
     }
 
@@ -863,14 +865,6 @@ span.red {
         }
     }
 }
-.container {
-}
-.anim-items {
-}
-.anim-hide {
-}
-
-
 
 
 .differences {
@@ -1312,9 +1306,6 @@ span.red {
     margin: 25px 0
   }
   
-  
-  
-  
 
 //   .order-form-input-field-wrapper {
 //     width:100%;
@@ -1694,16 +1685,30 @@ span.red {
 
     &__social-vk {
         margin: 0 30px 0 0;
+
+        img {
+            max-width: 40px;
+        }
+    }
+    &__social-ok {
+        
+        img {
+            max-width: 40px;
+        }
     }
 
     &__copywright {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     &__copywright-logo {
-        margin-right: 40px;
+        margin-right: 0px;
+
+        img {
+            max-width: 140px;
+        }
     }
 
     &__copywright-text {
@@ -2187,6 +2192,7 @@ ul li.footer__item {
 @import "_768";
 @import "_425";
 @import "_380";
+@import "_359";
 
 
 

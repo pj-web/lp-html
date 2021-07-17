@@ -1,7 +1,15 @@
 @media (max-width: 359px) {
 
+    img {
+        max-width: 240px;
+    }
+
+    .container {
+        padding: 40px 10px;
+    }
+
     .btn-buy {
-        padding: 24px 40px;
+        padding: 24px 30px;
     }
 
     .hero {
@@ -24,11 +32,7 @@
         }
     }
 
-   
 
-    .result-text {
-        bottom: 1300px;
-    }
 
     .differences {
         &__common-left {
