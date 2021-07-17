@@ -74,7 +74,7 @@ button{cursor: pointer;}
 button::-moz-focus-inner{padding:0;border:0;}
 a,a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
-ul li{list-style: none;}
+ul li{list-style: outside url('../images/list.svg');}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
@@ -149,7 +149,7 @@ div.anim-items {
 }
 
 a {
-    color: #ff4141;
+    color: #D61A33;
 
     &:hover {
         text-decoration: underline;
@@ -179,22 +179,22 @@ p.anim-items {
 ul {
     font-size: 20px;
     line-height: 22px;
-    margin: 0 0 40px 0;
+    margin: 0 0 40px 20px;
 
     li {
         padding: 0 0 0 25px;
         margin: 0 0 9px 0;
         position: relative;
 
-        &::before {
-            content: "";
-            background: url('../images/list.svg') 0 0 no-repeat;
-            position: absolute;
-            top: 6px;
-            left: 0px;
-            width: 18px;
-            height: 18px;
-        }
+        // &::before {
+        //     content: "";
+        //     background: url('../images/list.svg') 0 0 no-repeat;
+        //     position: absolute;
+        //     top: 6px;
+        //     left: 0px;
+        //     width: 18px;
+        //     height: 18px;
+        // }
     }   
 }
 
@@ -398,7 +398,7 @@ span.red {
         }
         &:active {
             box-shadow: none;
-            color: #ff4141;
+            color: #D61A33;
             background-color: #fff;
 
     }
@@ -773,7 +773,7 @@ span.red {
     }
 
     &__column-1 {
-        width: 50%;
+        
         margin: 0 20px 0 0;
         
 
@@ -784,8 +784,12 @@ span.red {
     }
 
     &__column-2 {
-        width: 50%;
         
+        
+    }
+
+    &__principle {
+        display: flex;
     }
 
     &__btn {
@@ -925,7 +929,7 @@ span.red {
         span {
             font-size: 48px;
             font-weight: 700;
-            color: #FF4141;
+            color: #D61A33;
         }
         
     }
@@ -965,7 +969,7 @@ span.red {
         & input[type="text"] { 
             width:100%;
             height: 80px;
-            border:2px solid #FF4141;
+            border:2px solid #D61A33;
             border-radius:5px;
             background:#fff;
             font-size: 24px;
@@ -982,7 +986,7 @@ span.red {
         & input[type="tel"]{ 
             width:100%;
             height: 80px;
-            border:2px solid #FF4141;
+            border:2px solid #D61A33;
             border-radius:5px;
             background:#fff;
             font-size: 24px;
@@ -1315,7 +1319,7 @@ span.red {
 //   .order-form-input-field-wrapper {
 //     width:100%;
 //     height: 80px;
-//     border:2px solid #FF4141;
+//     border:2px solid #D61A33;
 //     border-radius:5px;
 //     background:#fff;
 //     font-size: 24px;
@@ -1362,7 +1366,7 @@ span.red {
             font-size: 36px;
             line-height: 44px;
             font-weight: 700;
-            color: #FF4141;
+            color: #D61A33;
         
     }
 }
@@ -1508,8 +1512,7 @@ span.red {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    background: #FF4141;
-    border-radius: 5px;
+    background: #D61A33;
     transition: all 0.5s ease 0s;
     padding: 25px 88px;
     color: #fff;
@@ -1644,12 +1647,14 @@ span.red {
 
 
 .footer {
+    position: relative;
+    z-index: 2;
     h3 {
         margin: 0;
         text-align: left;
     }
     padding: 60px 0;
-    background-color: #3b3b3b;
+    background-color: #000;
 
     &__inner {
         margin: 0 40px;
@@ -1706,8 +1711,9 @@ span.red {
        
 }
 
-ul li.footer__item::before {
-        display: none;
+ul li.footer__item {
+        list-style: none;
+        margin-left: -20px;
 }
 
 .pharmacies {
@@ -2050,7 +2056,7 @@ ul li.footer__item::before {
 
         a {
             color: #fff;
-            background-color: #ff4141;
+            background-color: #D61A33;
             padding: 10px 20px 10px 20px;
             border-radius: 5px;
             transition: all 0.5s ease 0s;
@@ -2060,7 +2066,7 @@ ul li.footer__item::before {
             }
             &:active {
                 box-shadow: none;
-                color: #ff4141;
+                color: #D61A33;
                 background-color: #fff;
             }
         }
@@ -2199,7 +2205,7 @@ ul li.footer__item::before {
                 top: 20%;
             }
 		}
-}
+    }
 
 
 
@@ -2258,13 +2264,14 @@ ul li.footer__item::before {
 
         &__container {
             position: inherit;
+            padding-bottom: 40px;
         }
         
 
         &__body {
             position: inherit;
             background-color: inherit;
-            background: url('..images/hero-mobile-bg.jpg') top / cover no-repeat;
+            background: url('../images/hero-mobile-bg.jpg') top / cover no-repeat;
 
         }
 
@@ -2300,14 +2307,14 @@ ul li.footer__item::before {
             }
 
             &__list {
-                
-                li::before {
-                    display: none;
-                }
+               margin: 0 auto 40px;
+               max-width: 42%;
+               text-align: left;
+
         }
 
         &__list-item {
-            padding: 0;
+            padding-left: 40px;
         }
     
             &__item {
@@ -2338,31 +2345,34 @@ ul li.footer__item::before {
 
     .description {
 
+        &::before {
+            display: none;
+        }
+
 		&__inner {
-            margin: 0 40px;
+            
+            padding: 0;
 		}
 
 		&__columns {
-            flex-direction: column;
+            flex-direction: column-reverse;
             
 		}
 
 		&__column-1 {
-            text-align: center;
-            width: 100%;
             margin-bottom: 20px;
-
-            img {
-                max-width: 1100px;
-            }
 		}
 
 		&__column-2 {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
 		}
+
+        &__principle {
+            flex-direction: column;
+        }
+
+        &__principle-1 {
+            text-align: center;
+        }
 
 		&__penis {
 		}
@@ -2799,37 +2809,16 @@ ul li.footer__item::before {
         line-height: 24px;
     }
 
-    blockquote {
-        margin: 20px 10px 40px 10px;
-        padding: 20px 20px 20px 40px;
-
-        &::before {
-            opacity: 10%;
-        }
-        
-    }
-
-    .header {
-
-        &__logo {
-            img {
-                max-width: 60px;
-            }
-        }
-    
-        &__menu {
-        }
-    
-    }
-
-
     .header {
 
         &__contaner {
             justify-content: space-between;
         }
-    
+
         &__logo {
+            img {
+                max-width: 60px;
+            }
         }
     
         &__menu {
@@ -2843,8 +2832,6 @@ ul li.footer__item::before {
         }
     }
     .menu {
-    
-      
     
         &__body {
             position: fixed;
@@ -2888,7 +2875,8 @@ ul li.footer__item::before {
     }
 
     .hero {
-        
+
+       
     
         &::before {
             display: none;
@@ -2917,6 +2905,7 @@ ul li.footer__item::before {
     
     
             &__list {
+                max-width: 56%;
                
                 
             }
@@ -2951,9 +2940,7 @@ ul li.footer__item::before {
             margin-bottom: 0px;
         }
         &__column-1 {
-                img {
-                    max-width: 600px;
-                }
+               
             
         }
         &__penis {
@@ -2985,20 +2972,7 @@ ul li.footer__item::before {
         
     }
 
-    .symptoms__item:not(:nth-child(3n)):after {
-        display: none
-    }
-    .symptoms__item:not(:nth-child(2n)):after {
-        content: "";
-        display: block;
-        height: 100px;
-        width: 1px;
-        position: absolute;
-        right: 0;
-        top: 8px;
-        background-color: #e9eaea
-    }
-
+    
     .buy {
         &__column-1 {
             width: 100%;
@@ -3085,18 +3059,6 @@ ul li.footer__item::before {
     
         &__item-section {
         }
-    }
-
-    .interactive__title {
-        font-size: 16px;
-        margin-bottom: 3px
-    }
-    .interactive__description {
-        font-size: 14px
-    }
-
-    .interactive-right__wrap {
-        margin-bottom: 40px;
     }
 
     .prevention {
@@ -3370,6 +3332,9 @@ ul li.footer__item::before {
 }
 
 @media (max-width: 425px) {
+    img {
+        max-width: 310px;
+    }
 
     h1 {
         font-size: 36px;
@@ -3388,17 +3353,8 @@ ul li.footer__item::before {
         margin-left: 20px;
     }
 
-    .header {
-
-        &__logo {
-            img {
-                max-width: 50px;
-            }
-        }
-    
-        &__menu {
-        }
-    
+    .btn-buy {
+        padding: 24px 54px;
     }
 
     .buy__form input[type=text], .buy__form input[type=text] {
@@ -3434,6 +3390,9 @@ ul li.footer__item::before {
     .header {
 
         &__logo {
+            img {
+                max-width: 120px;
+            }
         }
 
         &__item-1 {
@@ -3453,41 +3412,41 @@ ul li.footer__item::before {
 
     .hero {
 
+        &__container {
+            padding: 20px 20px;
+        }
+
         &__inner {
+        
+                margin: 0 20px;
+        
+            
             padding: 40px 0 20px;
         }
 
-        &__text {
-            h1 {
-                span {
-                    font-size: 15px;
-                }
+        &__column-1 {
+           
+        }
+
+        .hero__column-2 h1 {
+            line-height: 48px;
+
+            span {
+                font-size: 32px;
             }
         }
 
-        &__image {
-            img {
-                max-width: 350px; 
-            }
+        &__list {
+            max-width: 82%;
+        }
+
+        &__list-item {
+            padding: 0 0 0 10px;
         }
     }
     .description {
         &__column-1 {
-            img {
-                max-width: 350px;
-            }
         }
-    }
-    .symptoms__item:not(:nth-child(2n)):after {
-        display: none
-    }
-
-    .symptoms__wrap ul li {
-        padding: 0 0 0 0px;
-    }
-
-    .result-text {
-        bottom: 1100px;
     }
 
     .differences {
@@ -3535,39 +3494,7 @@ ul li.footer__item::before {
         }
     }
 
-    .interactive__list__item {
-        width: 100%;
-        padding: 10px;
-        max-width: 300px;
-        height: auto;
-        box-sizing: border-box
-    }
-    .interactive__img {
-        width: 80px;
-        height: 80px;
-        margin: 0 10px
-    }
-    .interactive__title {
-        font-size: 16px;
-        margin-bottom: 3px
-    }
-    .interactive__description {
-        font-size: 14px
-    }
-    .interactive-right__wrap {
-        width: 100%;
-        max-width: 350px;
-        margin-bottom: 40px;
-    }
-    .interactive-right__wrap p {
-        line-height: 1.4;
-        font-size: 16px
-    }
-    .interactive-right__wrap button {
-        font-size: 18px;
-        width: 100%
-    }
-
+    
     
 
     .pharmacology {
@@ -3649,8 +3576,6 @@ ul li.footer__item::before {
         }
     }
     .prevention {
-
-    
 
         &__inner {
             
@@ -3754,10 +3679,17 @@ ul li.footer__item::before {
 }
 
 @media (max-width: 380px) {
+    img {
+        max-width: 260px;
+    }
 
     h2 {
         font-size: 24px;
         line-height: 26px;
+    }
+
+    .btn-buy {
+        padding: 24px 48px;
     }
 
     .countdown {
@@ -3794,6 +3726,11 @@ ul li.footer__item::before {
             opacity: 10%;
         }
         
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .header {
@@ -3843,49 +3780,28 @@ ul li.footer__item::before {
         }
     
             &__columns {
-                padding-top: 20px;
-                flex-direction:column-reverse;
-                align-items: center;
+                // padding-top: 20px;
+                // align-items: center;
                 
 
             }
-    
-            &__text {
-                width: 100%;
-                text-align: center;
 
-                h1 {
-                    font-size: 38px;
-                    line-height: 40px;
+            &__column-1 {
+               
+            }
 
-                    span {
-                        font-size: 15px;
-                        line-height: 18px;
-                        
-                    }
-                }
-                
+            &__column-2 {
+               
+            }
+
+            .hero__column-2 h1 {
+                line-height: 48px;
     
-                & button.btn-buy {
-                    margin: 0 0 20px 0;
+                span {
+                    font-size: 28px;
                 }
             }
     
-            &__header {
-                font-weight: 800;
-                font-size: 86px;
-                line-height: 86px;
-                letter-spacing: -0.02em;
-                text-transform: uppercase;
-                margin: 0 0 20px 0;
-            }
-    
-            &__sub-header {
-                font-size: 28px;
-                line-height: 32px;
-                letter-spacing: -0.02em;
-                margin: 0 30px 40px 30px;
-            }
     
             &__list {
                
@@ -4316,6 +4232,10 @@ ul li.footer__item::before {
 }
 
 @media (max-width: 359px) {
+
+    .btn-buy {
+        padding: 24px 40px;
+    }
 
     .hero {
         &__inner {
