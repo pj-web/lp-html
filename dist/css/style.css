@@ -181,7 +181,7 @@ h3 {
   font-size: 24px;
   text-align: center;
   font-weight: 700;
-  margin: 40px 0 20px 0;
+  margin: 30px 0 20px 0;
 }
 
 h3.anim-items {
@@ -556,7 +556,7 @@ span.red {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 60px 40px 20px;
 }
 
 .header {
@@ -2321,28 +2321,12 @@ ul li.footer__item {
 }
 
 @media (max-width: 1200px) {
-  .blockquote {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  img {
+    width: 420px;
   }
 
-  .blockquote__warning {
-    width: 100%;
-  }
-
-  .blockquote__warning::before {
-    top: 25%;
-  }
-
-  .blockquote__lightbox {
-    width: 100%;
-    margin: 20px 0 0 0;
-  }
-
-  .blockquote__lightbox::before {
-    top: 20%;
+  .header__logo img {
+    max-width: 140px;
   }
 
   .header__contaner {
@@ -2456,41 +2440,12 @@ ul li.footer__item {
     display: none;
   }
 
-  .description__inner {
-    padding: 0;
-  }
-
   .description__columns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    margin-top: 40px;
   }
 
-  .description__column-1 {
-    margin-bottom: 20px;
-  }
-
-  .description__principle {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .description__principle-1 {
-    text-align: center;
-  }
-
-  .description__why {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
-  .description__why-1 {
-    margin-top: 30px;
+  .indications__columns {
+    margin: 0 0 20px;
   }
 
   .differences__common {
@@ -2778,7 +2733,7 @@ ul li.footer__item {
   }
 
   .btn-buy {
-    margin: 30px 0px 20px 0;
+    margin: 10px 0px 10px 0;
   }
 
   .btn-consultation {
@@ -2886,30 +2841,36 @@ ul li.footer__item {
     max-width: 360px;
   }
 
-  .description__columns {
-    margin-bottom: 0px;
+  .description__inner {
+    padding: 0;
   }
 
-  .description__penis {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .description__columns {
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .description__column-1 {
+    margin-bottom: 20px;
+  }
+
+  .description__principle {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 
-  .description__penis-1 img {
-    max-width: 360px;
+  .description__principle-1 {
+    text-align: center;
   }
 
-  .description__penis-2 img {
-    max-width: 360px;
-    margin-right: 20px;
-  }
-
-  .description__why-2 img {
-    max-width: 360px;
+  .description__principle-list {
+    margin: 0 auto 20px;
+    width: 85%;
   }
 
   .buy__column-1 {
@@ -3190,6 +3151,10 @@ ul li.footer__item {
 
   ol {
     margin-left: 20px;
+  }
+
+  .container {
+    padding: 40px 20px;
   }
 
   .btn-buy {
@@ -3730,150 +3695,6 @@ ul li.footer__item {
     margin: 0 0 20px 0;
     max-width: 330px;
     max-height: 220px;
-  }
-}
-
-@media (max-width: 359px) {
-  .btn-buy {
-    padding: 24px 40px;
-  }
-
-  .hero__inner {
-    margin: 0 20px;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-    line-height: 34px;
-  }
-
-  .hero h1 span {
-    font-size: 14px;
-    line-height: 1;
-  }
-
-  .hero__image img {
-    max-width: 264px;
-  }
-
-  .result-text {
-    bottom: 1300px;
-  }
-
-  .differences__common-left img {
-    max-width: 250px;
-  }
-
-  .differences__gelmiflor-right img {
-    max-width: 250px;
-  }
-
-  .pharmacology__drug-1 img {
-    max-width: 280px;
-  }
-
-  .pharmacology__confa-2 img {
-    max-width: 280px;
-  }
-
-  .how__column-2 img {
-    max-width: 260px;
-  }
-
-  .how__symptoms-image img {
-    max-width: 260px;
-  }
-
-  .pharmacies__inner {
-    margin: 0 10px;
-  }
-
-  .pharmacies__items {
-    max-width: 320px;
-  }
-
-  .pharmacies__item {
-    max-width: 220px;
-  }
-
-  .popup__content {
-    max-width: 260px;
-  }
-
-  .instruction__image img {
-    max-width: 240px;
-  }
-
-  .complications__column-1 img {
-    max-width: 280px;
-  }
-
-  .complications__column-2 {
-    margin: 0 0 0 0px;
-  }
-
-  .hero-pages {
-    padding: 10px 0 0 0;
-  }
-
-  .hero-pages__content {
-    padding: 25px 0 5px;
-  }
-
-  .hero-pages__text {
-    margin: 30px 0 0 0;
-  }
-
-  .hero-pages__title {
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .hero-pages__small-title {
-    margin: 0 0 10px 0;
-  }
-
-  .hero-pages__sub-title {
-    font-size: 8px;
-    line-height: 10px;
-  }
-
-  .hero-pages__image img {
-    max-width: 125px;
-  }
-
-  .hero-pages__buttons {
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero-pages__contacts {
-    margin: 5px 0 5px 0;
-    font-size: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .hero-pages__contacts div {
-    margin: 0 10px;
-  }
-
-  .hero-pages__btn-1 {
-    margin: 0px 0 10px 0;
-  }
-
-  #map {
-    width: 260px;
-    height: 300px;
-  }
-
-  .contacts__map {
-    max-width: 280px;
-    max-height: 200px;
   }
 }
 

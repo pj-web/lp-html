@@ -1,0 +1,350 @@
+@media (max-width: 425px) {
+    img {
+        max-width: 310px;
+    }
+
+    h1 {
+        font-size: 36px;
+
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    ol {
+        margin-left: 20px;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .btn-buy {
+        padding: 24px 54px;
+    }
+
+    .buy__form input[type=text], .buy__form input[type=text] {
+        font-size: 20px;
+    }
+
+    .blockquote {
+     
+    
+        &__warning {
+ 
+            p {
+                padding: 20px 20px 20px 20px;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__lightbox {
+
+            p {
+                padding: 20px 20px 20px 20px;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .header {
+
+        &__logo {
+            img {
+                max-width: 120px;
+            }
+        }
+
+        &__item-1 {
+            display: none;
+        }
+
+        &__item-2 {
+            display: none;
+        }
+    
+        &__menu {
+        }
+    
+        &__phone {
+        }
+    }
+
+    .hero {
+
+        &__container {
+            padding: 20px 20px;
+        }
+
+        &__inner {
+        
+                margin: 0 20px;
+        
+            
+            padding: 40px 0 20px;
+        }
+
+        &__column-1 {
+           
+        }
+
+        .hero__column-2 h1 {
+            line-height: 48px;
+
+            span {
+                font-size: 32px;
+            }
+        }
+
+        &__list {
+            max-width: 82%;
+        }
+
+        &__list-item {
+            padding: 0 0 0 10px;
+        }
+    }
+    .description {
+        &__column-1 {
+        }
+    }
+
+    .differences {
+        &__common-left {
+            img {
+                max-width: 340px;
+            }
+        }
+        &__gelmiflor-right {
+            img {
+                max-width: 340px;
+            }
+        }
+    }
+
+    .composition {
+
+    
+
+        &__inner {
+            
+        }
+    
+        &__items {
+        }
+
+        &__item {
+
+        }
+    
+        &__item:nth-child(odd) {
+
+            
+        }
+
+        &__item:nth-child(even) {
+
+            
+        }
+    
+        &__item-section {
+            img {
+                max-width: 380px;
+            }
+        }
+    }
+
+    
+    
+
+    .pharmacology {
+
+         &__drug-1 {
+            margin: 0 0 20px 0;
+             img {
+                 max-width: 360px;
+             }
+        }
+
+        &__confa-2 {
+            
+            img {
+                max-width: 360px;
+            }
+        }
+    }
+
+    .instruction {
+
+        &__inner {
+        }
+    
+        &__items {
+     
+            grid-template-columns: repeat(1, 1fr);
+            
+        }
+    
+        &__item {
+            margin: 0;
+        }
+    }
+
+    .complications {
+
+		&__column-1 {
+            img {
+                max-width: 360px;
+            }
+		}
+        &__column-2 {
+            margin: 0 0 0 20px;
+		}
+    }
+
+    .proof {
+
+		&__inner {
+		}
+
+		&__items {
+            grid-template-columns: repeat(1, 1fr);
+		}
+
+		&__item {
+		}
+
+		&__item-title {
+		}
+    }
+
+    .how {
+    
+        &__column-2 {
+            img {
+                max-width: 340px;
+            }
+        }
+
+        &__symptoms-image {
+                img {
+                max-width: 340px;
+            }
+        }
+        &__symptoms-text {
+           
+        }
+    }
+    .prevention {
+
+        &__inner {
+            
+        }
+    
+        &__items {
+        }
+
+        &__item {
+
+        }
+    
+        &__item:nth-child(odd) {
+
+            
+        }
+
+        &__item:nth-child(even) {
+
+            
+        }
+    
+        &__item-section {
+            margin: 0 0 20px 0;
+            img {
+                max-width: 360px;
+            }
+        }
+    }
+
+    .pharmacies {
+        &__inner {
+            margin: 0 20px;
+        }
+    
+        &__items {
+            max-width: 380px;
+        }
+    
+        &__item {
+            max-width: 280px;
+            
+        }
+        &__item-text {
+            padding: 10px 10px 10px 10px;
+        }
+    }
+
+    .hero-pages {
+        padding: 10px 0 0 0;
+
+		&__content {
+            flex-wrap: wrap;
+            align-items:flex-start;
+		}
+
+		&__text {
+            // width: 50%;
+            margin: 40px 0 0 0;
+		}
+
+		&__title {
+            font-size: 20px;
+            line-height: 28px;
+		}
+
+		&__small-title {
+            margin: 0 0 10px 0;
+		}
+
+        &__sub-title {
+
+        }
+
+		&__image {
+            img {
+                max-width: 180px;
+            }
+		}
+
+		&__buttons {
+            width: 100%;
+            text-align: center;
+		}
+
+        &__contacts {
+            margin: 10px 0 10px 0;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+		&__btn-1 {
+            margin: 0px 0 10px 0;
+		}
+
+		&__btn-2 {
+            margin: 0px 0 10px 0;
+		}
+    }
+}

@@ -1,0 +1,591 @@
+@media (max-width: 1200px) {
+    
+    img {
+        width: 420px;
+    }
+    
+        .header {
+
+            &__logo {
+                img {
+                    max-width: 140px;
+                }
+            }
+    
+            &__contaner {
+                justify-content: space-around;
+            }
+    
+            &__item-1 {
+                padding: 0px 0 0 50px;
+                max-width: 230px;
+                font-size: 14px;
+    
+                &::before {
+                    top: 0px;
+                }
+            }
+    
+            &__item-2 {
+                padding: 0px 0 0 50px;
+                max-width: 200px;
+                font-size: 14px;
+    
+                &::before {
+                    top: 0px;
+                }
+            }
+    
+        }
+    
+        .menu {
+    
+            &__icon {
+                
+            }
+        
+            &__body {
+            }
+        
+            &__nav {
+                
+                
+            }
+        
+            &__item {
+                & + .menu__item {
+                    padding: 0 0 0 60px;
+                }
+                
+            }
+        }
+    
+        .hero {
+            min-height: fit-content;
+    
+            &__container {
+                position: inherit;
+                padding-bottom: 40px;
+            }
+            
+    
+            &__body {
+                position: inherit;
+                background-color: inherit;
+                background: url('../images/hero-mobile-bg.jpg') top / cover no-repeat;
+    
+            }
+    
+            &__inner {
+                margin: 0 40px;
+               
+                
+            }
+        
+                &__columns {
+                    flex-wrap: wrap;
+                    // flex-direction:column;
+                    align-items: center;
+                    justify-content: center;
+                    // padding-bottom: 20px;
+    
+                }
+    
+                &__column-1 {
+                    text-align: center;
+                    margin: 0;
+                    width: 100%;
+                }
+    
+                &__column-2 {
+                    text-align: center;
+                    width: 100%;
+                }
+        
+    
+                &__button {
+                    text-align: center;
+                }
+    
+                &__list {
+                   margin: 0 auto 40px;
+                   max-width: 42%;
+                   text-align: left;
+    
+            }
+    
+            &__list-item {
+                padding-left: 40px;
+            }
+        
+                &__item {
+                    padding: 0;
+        
+                    &::before {
+                        display: none;
+                    }
+                }
+        
+                &__image {
+                    width: 100%;
+                    text-align: center;
+    
+                    img {
+                        max-width: 600px;
+                    }
+            }
+        }
+    
+        .images-hero {
+            display: none;
+        }
+    
+        
+        .description {
+            &::before {
+                display: none;
+            }
+           
+
+            &__inner {
+            }
+    
+            &__description {
+            }
+    
+            &__description-text {
+            }
+    
+            &__columns {
+                margin-top: 40px;
+            }
+    
+            &__column-1 {
+            }
+    
+            &__column-2 {
+                
+            }
+    
+            &__principle {
+            }
+    
+            &__principle-1 {
+            }
+    
+            &__principle-2 {
+            }
+    
+            &__principle-list {
+            }
+    }
+    
+    
+    
+
+    
+    .indications {
+    
+        &__inner {
+        }
+    
+        &__items {
+        }
+    
+        &__item {
+        }
+    
+        &__item-image {
+        }
+    
+        &__item-text {
+        }
+    
+        &__columns {
+            margin: 0 0 20px;
+        }
+    
+        &__column {
+        }
+    }
+    
+    
+    
+    
+    .differences {
+        &__common {
+            flex-direction: column;
+        }
+        &__common-left {
+            margin: 0 0 20px 0;
+        }
+        &__gelmiflor {
+            flex-direction: column-reverse;
+        }
+        &__gelmiflor-right {
+            margin: 0 0 20px 0;
+        }
+    }
+    
+        .buy {
+    
+            &__inner {
+                margin: 0 40px;
+                
+            }
+    
+            &__price {
+                
+            }
+    
+            &__columns {
+                flex-direction: column-reverse;
+                margin-bottom: 40px;
+            }
+    
+            &__column-1 {
+                width: 80%;
+            }
+    
+            &__form {
+            }
+    
+            &__button {
+            }
+    
+            &__checkbox {
+            }
+    
+            
+            &__column-2 {
+                width: 100%;
+    
+            }
+    
+            &__bloquote {
+                align-items: start;
+                img {
+                    max-width: 50px;
+                    margin: 20px 0 0 10px;
+                }
+            }
+        }
+    
+        .principle {
+            &__items {
+                flex-direction: column;
+            }
+            &__item {
+                width: 100%;
+            }
+        }
+    
+        .composition {
+        
+    
+            &__inner {
+                margin: 0 40px;
+            }
+        
+            &__items {
+            }
+        
+            &__item {
+                
+            }
+        
+            &__item-section {
+            }
+        }
+    
+    
+            .pharmacology {
+    
+                &__inner {
+                }
+    
+                &__drug {
+                    flex-direction: column-reverse;
+                }
+    
+                &__drug-1 {
+                }
+    
+                &__drug-2 {
+                }
+    
+                &__confa {
+                    flex-direction: column-reverse;
+                }
+    
+                &__confa-1 {
+                }
+    
+                &__confa-2 {
+                    margin: 0 0 20px 0;
+                }
+        }
+    
+        .complications {
+    
+            &__inner {
+            }
+    
+            &__columns {
+                flex-direction: column-reverse;
+                margin: 0;
+            }
+    
+            &__column-1 {
+                margin: 0 0 40px 0;
+            }
+    
+            &__column-2 {
+                margin: 0 0 0 40px;
+            }
+        }
+    
+        .proof {
+    
+            &__inner {
+            }
+    
+            &__items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+    
+            &__item {
+            }
+    
+            &__item-title {
+            }
+        }
+    
+    
+    
+    
+    
+    
+        .how {
+    
+            &__inner {
+                margin: 0 40px;
+            }
+        
+            &__columns {
+                flex-direction: column-reverse;
+                
+            }
+        
+            &__column-1 {
+                width: 100%;
+                
+            }
+        
+            &__column-2 {
+                width: 100%;
+                margin: 0 0px 40px 0;
+                 
+            }
+    
+            &__symptoms {
+                flex-direction: column;
+            }
+        
+            &__symptoms-image {
+                margin: 0 0px 40px 0;
+            }
+    
+            
+            
+        }
+    
+        .benefits {
+    
+            &__inner {
+                margin: 0 40px;
+            }
+    
+            &__list {
+            }
+    }
+    
+    .details {
+        
+    
+        &__inner {
+            margin: 0 40px;
+        }
+    }
+    
+    
+    
+    .conditions {
+        &__inner {
+            margin: 0 40px;
+        }
+    
+        &__buy-form {
+            margin: 0 60px;
+        }
+    }
+    
+    
+        .pharmacies {
+            &__inner {
+                margin: 0 40px;
+            }
+        
+            &__items {
+                max-width: 1000px;
+            }
+        
+            &__item {
+                max-width: 900px;
+                
+            }
+        }
+    
+        .popup {
+            &__content {
+                max-width: 600px;
+            }
+        }
+    
+        //------------------------------
+    
+        .hero-pages {
+            
+            
+    
+            &::before {
+                font-size: 120px;
+                top: 0%;
+            }
+    
+            &::after {
+                font-size: 120px;
+                bottom: -20%;
+            }
+    
+            &__content {
+                margin: 0 40px;
+                padding: 40px 0 10px 0;
+            }
+    
+            &__text {
+                margin: 20px 0 0 0;
+            }
+    
+            &__title {
+                font-size: 34px;
+            }
+    
+            &__small-title {
+                font-size: 14px;
+                line-height: 16px;
+            }
+    
+            &__sub-title {
+                font-size: 14px;
+            }
+    
+            &__image {
+                img {
+                    max-width: 250px;
+                    margin-top: 40px;
+                }
+            }
+    
+            &__buttons {
+            }
+    
+            &__contacts {
+                margin: 40px 0 20px 0;
+                font-size: 14px;
+            }
+    
+            &__btn-1 {
+                a {
+                    padding: 10px 18px 10px 18px;
+                    font-size: 16px;
+                }
+            }
+    
+            .btn-buy {
+                padding: 20px 35px;
+            }
+    
+    }
+    
+       
+    
+        //------------------------------
+    
+        .doctors {
+            padding: 40px 0px;
+    
+            &__inner {
+                margin: 0 40px;
+            }
+    
+            &__item {
+                display: block;
+                
+            }
+    
+            &__avatar {
+                padding: 0px 0 0 25px;
+            }
+            &__btn {
+                margin: 20px 10px 10px 0;
+            }
+        }
+    
+        .customers {
+            padding: 40px 0px;
+    
+            &__inner {
+                margin: 0 40px;
+            }
+    
+            &__items {
+            }
+    
+            &__item {
+                display: block;
+            }
+    
+            &__avatar {
+                padding: 0px 0 0 25px;
+            }
+    
+            &__text {
+            }
+    
+            &__name {
+            }
+    
+            &__age {
+            }
+    
+            &__testimonial {
+            }
+    }
+        //------------------------------
+        .contacts {
+            &__inner {
+                margin: 0 40px;
+            }
+            &__team {
+                grid-template-columns: repeat(2, 1fr);
+                
+            }
+            &__team-item {
+                
+                // width: 50%;
+                margin: 0 0 40px 0;
+            }
+        }
+    
+    }
