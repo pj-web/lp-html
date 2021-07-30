@@ -12,13 +12,15 @@ let path = {
         js: project_folder + "/js/",
         img: project_folder + "/images/",
         fonts: project_folder + "/fonts/",
+        icons: project_folder + "/icons/",
     },
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css: source_folder + "/scss/*.scss",
         js: source_folder + "/js/*.js",
-        img: source_folder + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
+        img: source_folder + "/images/**/*.{jpg,png,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf",
+        icons: source_folder + "/icons/*.svg",
     },
     watch: {
         html: source_folder + "/**/*.html",
@@ -38,6 +40,7 @@ webp = require("gulp-webp"),
 webphtml = require("gulp-webp-html"),
 ttf2woff = require("gulp-ttf2woff"),
 ttf2woff2 = require("gulp-ttf2woff2"),
+gulpAvif     = require('gulp-avif'),
 addSource = require('gulp-add-source-picture');
 const browserSync  = require('browser-sync').create();
 const concat       = require('gulp-concat');
@@ -56,13 +59,13 @@ function browsersync() {
         port: 3000,
         notify: false,
         online: true
-    })
+    });
 }
 
 function html() {
     return src(path.src.html)
     .pipe(fileinclude())
-    .pipe(webphtml())
+    // .pipe(webphtml())
     .pipe(dest(path.build.html))
     .pipe(browserSync.stream())
 }
@@ -104,6 +107,9 @@ function js() {
 function images() {
     return src(path.src.img)
     .pipe(newer(path.build.img))
+    .pipe(src(path.src.img))
+    .pipe(gulpAvif())
+    .pipe(dest(path.build.img))
     .pipe(webp({
         quality: 70
     }))
@@ -114,14 +120,6 @@ function images() {
     .pipe(browserSync.stream())
 }
 
-// gulp.task('otf2ttf', function() {
-//     return src([source_folder + '/fonts/*.otf'])
-//        .pipe(fonter({
-//             formats: ['ttf']
-//     }))
-//     .pipe(dest(source_folder + '/fonts/'));
-// })
-
 function fonts(params) {
     src(path.src.fonts)
         .pipe(ttf2woff())
@@ -130,31 +128,6 @@ function fonts(params) {
         .pipe(ttf2woff2())
         .pipe(dest(path.build.fonts));
 };
-
-// function fontsStyle(params) {
-//     let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
-//     if (file_content == '') {
-//         fs.writeFile(source_folder + '/scss/fonts.scss', '', cb);
-//         return fs.readdir(path.build.fonts, function (err, items) {
-//            if (items) {
-//               let c_fontname;
-//               for (var i = 0; i < items.length; i++) {
-//               let fontname = items[i].split('.');
-//               fontname = fontname[0];
-//               if (c_fontname != fontname) {
-//                   fs.appendFile(source_folder + '/scss/fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', cb);
-//                }
-//                c_fontname = fontname;
-//                }
-//             }
-//         })
-//     }
-// }
-
-
-// function cb() {
-
-// }
 
 function watchFiles(params) {
     gulp.watch([path.watch.html], html);
@@ -168,7 +141,29 @@ function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+gulp.task('icons', function () {
+    
+    return gulp.src(path.src.icons)
+        .pipe(dest(path.build.icons))
+});
+
+gulp.task('images', function () {
+    return src(path.src.img)
+    .pipe(newer(path.build.img))
+    .pipe(src(path.src.img))
+    .pipe(gulpAvif())
+    .pipe(dest(path.build.img))
+    .pipe(webp({
+        quality: 70
+    }))
+    .pipe(dest(path.build.img))
+    .pipe(src(path.src.img))
+    .pipe(imagemin())
+    .pipe(dest(path.build.img))
+    .pipe(browserSync.stream())
+});
+
+let build = gulp.series(clean, gulp.parallel(js, css, html, fonts));
 let watch = gulp.parallel(build, watchFiles, browsersync);
 
 // exports.fontsStyle = fontsStyle;

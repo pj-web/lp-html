@@ -185,30 +185,36 @@
     
 
     
-    .indications {
-    
-        &__inner {
+    .symptoms {
+
+		&__inner {
+		}
+
+		&__text {
+		}
+
+		&__items {
+		}
+
+		&__item {
+            width: 50%;
+		}
+
+        &__item:nth-child(3) {
+            margin: 0;
         }
-    
-        &__items {
-        }
-    
-        &__item {
-        }
-    
-        &__item-image {
-        }
-    
-        &__item-text {
-        }
-    
-        &__columns {
-            margin: 0 0 20px;
-        }
-    
-        &__column {
-        }
-    }
+
+		&__item-image {
+            img {
+                border-radius: 10%;
+            }
+		}
+
+		&__item-text {
+		}
+}
+
+
     
     
     

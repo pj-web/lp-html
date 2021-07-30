@@ -1,5 +1,47 @@
 "use strict"
 
+// let a;
+//     if (navigator.userAgent.search(/Safari/) > 0) {a = 'Safari'};
+//     if (navigator.userAgent.search(/Firefox/) > 0) {a = 'MozillaFirefox'};
+//     if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Internet Explorer'};
+//     if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Google Chrome'};
+//     if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Яндекс браузер'};
+//     if (navigator.userAgent.search(/OPR/) > 0) {a = 'Opera'};
+//     if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Konqueror'};
+//     if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Debian Iceweasel'};
+//     if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'SeaMonkey'};
+//     if (navigator.userAgent.search(/Edge/) > 0) {a = 'Microsoft Edge'};
+//     alert.log(a);
+
+    
+    
+//     if (a = 'Internet Explorer') {
+//           document.div.classList.remove('anim-items');
+//     }
+
+
+// let browser, uAgent = navigator.userAgent;
+ 
+// if(uAgent.search("Firefox") > -1) {
+//     browser = "Mozilla Firefox";
+//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
+// else if(uAgent.indexOf("OPR") > -1) {
+//     browser = "Opera";
+//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
+// else if(uAgent.indexOf("Trident") > -1){
+//     browser = "Microsoft Internet Explorer";
+//     alert('У вас хороший браузер'); }
+// else if(uAgent.indexOf("YaBrowser") > -1) {
+//     browser = "Yandex";
+//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
+// else if(uAgent.search("Chrome") > -1) {
+//     browser = "Google Chrome";
+//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
+// else if(uAgent.indexOf("Safari") > -1) {
+//     browser = "Safari";
+//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
+//     alert("Вы пользуетесь браузером - " + browser);
+
 const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -379,9 +421,12 @@ document.addEventListener('keydown', function (e) {
         $('.pharmacies__item-title').not(this).removeClass('in').next().slideUp();
     });
 
+    
+    
     let animItems = document.querySelectorAll('.anim-items');
+    
 
-    if (animItems.length > 0) {
+    if (animItems.length > 0 ) {
         window.addEventListener('scroll', animOnScroll);
         function animOnScroll() {
             for (let index = 0; index < animItems.length; index++) {
@@ -404,7 +449,7 @@ document.addEventListener('keydown', function (e) {
                     } else {
                         if (isMobile.any()) {
                             animItem.classList.remove('anim-items');
-                        }
+                        } 
                     }
                 }
             }
@@ -419,6 +464,8 @@ document.addEventListener('keydown', function (e) {
             animOnScroll();
         }, 300);
     }
+
+ 
 
     ymaps.ready(init);
     function init(){

@@ -31,5 +31,8 @@
     "gulp-webp-html": "^1.0.2",
     "jquery": "^3.6.0",
     "rename": "^1.0.4"
+  },
+  "dependencies": {
+    "gulp-avif": "^1.0.1"
   }
 }
