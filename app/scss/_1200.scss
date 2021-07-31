@@ -212,7 +212,83 @@
 
 		&__item-text {
 		}
-}
+    }
+
+    .buy {
+    
+        &__inner {
+            
+            
+        }
+
+        &__price {
+            
+        }
+
+        &__columns {
+            
+        }
+
+        &__column-1 {
+            
+        }
+
+        &__form {
+        }
+
+        &__button {
+        }
+
+        &__checkbox {
+        }
+
+        
+        &__column-2 {
+            
+        }
+
+        &__bloquote {
+            align-items: start;
+            img {
+                max-width: 50px;
+                margin: 20px 0 0 10px;
+            }
+        }
+    }
+
+    .non-treatment {
+
+		&__inner {
+		}
+
+		&__columns {
+		}
+
+		&__columns-left {
+		}
+
+		&__columns-list {
+		}
+
+		&__columns-right {
+
+		}
+
+		&__recover {
+		}
+
+		&__items {
+            flex-wrap: wrap;
+		}
+
+		&__item {
+            padding: 10px;
+           
+		}
+
+		&__item-text {
+		}
+    }
 
 
     
@@ -234,49 +310,7 @@
         }
     }
     
-        .buy {
-    
-            &__inner {
-                margin: 0 40px;
-                
-            }
-    
-            &__price {
-                
-            }
-    
-            &__columns {
-                flex-direction: column-reverse;
-                margin-bottom: 40px;
-            }
-    
-            &__column-1 {
-                width: 80%;
-            }
-    
-            &__form {
-            }
-    
-            &__button {
-            }
-    
-            &__checkbox {
-            }
-    
-            
-            &__column-2 {
-                width: 100%;
-    
-            }
-    
-            &__bloquote {
-                align-items: start;
-                img {
-                    max-width: 50px;
-                    margin: 20px 0 0 10px;
-                }
-            }
-        }
+       
     
         .principle {
             &__items {

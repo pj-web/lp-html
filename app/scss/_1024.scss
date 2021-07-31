@@ -1,5 +1,13 @@
 @media (max-width: 1024px) {
 
+    .container {
+        padding: 40px 30px;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
     .hero {
         &__list {
             max-width: 53%;
@@ -66,8 +74,7 @@
     
     .alert {
         &__columns {
-            flex-direction: column;
-            margin-bottom: 0;
+           
         }
 
         &__columns-image {
@@ -78,4 +85,26 @@
             }
         }
     }
+
+    .buy {
+        &__columns {
+            
+        }
+
+        &__column-2 {
+            text-align: center;
+        }
+    }
+
+    .non-treatment {
+        &__columns-left {
+            margin-bottom: 20px;
+		}
+        &__columns-right {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
 }

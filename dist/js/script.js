@@ -20,27 +20,6 @@
 //     }
 
 
-// let browser, uAgent = navigator.userAgent;
- 
-// if(uAgent.search("Firefox") > -1) {
-//     browser = "Mozilla Firefox";
-//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
-// else if(uAgent.indexOf("OPR") > -1) {
-//     browser = "Opera";
-//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
-// else if(uAgent.indexOf("Trident") > -1){
-//     browser = "Microsoft Internet Explorer";
-//     alert('У вас хороший браузер'); }
-// else if(uAgent.indexOf("YaBrowser") > -1) {
-//     browser = "Yandex";
-//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
-// else if(uAgent.search("Chrome") > -1) {
-//     browser = "Google Chrome";
-//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
-// else if(uAgent.indexOf("Safari") > -1) {
-//     browser = "Safari";
-//     alert('А чем вам не нравится Microsoft Internet Explorer?'); }
-//     alert("Вы пользуетесь браузером - " + browser);
 
 const isMobile = {
     Android: function () {
@@ -268,12 +247,6 @@ append();
 contrySelect();
 
 
-
-
-
-
-
-
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 if (iconMenu) {
@@ -407,7 +380,6 @@ document.addEventListener('keydown', function (e) {
 // }
 
 // initAll();
-
 
 
 

@@ -120,38 +120,32 @@
         }
     }
 
-    .indications {
-
-		&__inner {
-		}
-
-		&__items {
-		}
-
-		&__item {
-            width: 100%;
-		}
-
-		&__item-image {
-		}
-
-		&__item-text {
-		}
-
-		&__columns {
-		}
-
-		&__column {
-            img {
-                margin: 0;
-            }
-		}
-
-        &__column:first-child {
-            margin-bottom: 20px;
+    .symptoms {
+        &__items {
+            flex-direction: column;
         }
-}
+        &__item {
+            width: 100%;
+        }
+        &__item-image {
+            img {
+                border-radius: 0;
+            }
+        }
+    }
 
+    .buy {
+        &__items {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr 1fr auto auto 1fr;
+        }
+
+        &__item {
+            padding: 10px;
+        }
+    }
+
+    
 
     .differences {
         &__common-left {
