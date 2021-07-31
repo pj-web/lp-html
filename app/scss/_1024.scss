@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+
+    .hero {
+        &__list {
+            max-width: 53%;
+        }
+    }
+
+    .description {
+        &__columns {
+            flex-direction: column-reverse;
+        }
+
+        &__principle {
+            flex-direction: column;
+        }
+        &__principle-1 {
+            text-align: center;
+        }
+    }
+    .symptoms {
+        background-image: none;
+        background-color: #DCF4FF;
+
+		&__inner {
+		}
+
+		&__text {
+		}
+
+		&__items {
+		}
+
+		&__item {
+            
+		}
+
+        &__item:nth-child(3) {
+            
+        }
+
+		&__item-image {
+            max-width: 100%;
+            img {
+                width: 100%;
+                border-radius: 5%;
+                
+            }
+		}
+
+		&__item-text {
+		}
+
+        &__text:last-child {
+            max-width: 100%;
+            padding: 20px 0px 0px;
+        }
+    }
+    
+    .image {
+        margin-bottom: 20px;
+        &::after {
+            display: none;
+        }
+    }
+    
+    .alert {
+        &__columns {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        &__columns-image {
+            max-width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
