@@ -114,6 +114,10 @@ ul li {
   list-style: outside url("../icons/list.svg");
 }
 
+ol {
+  list-style-position: inside;
+}
+
 img {
   vertical-align: top;
 }
@@ -485,6 +489,10 @@ span.red {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-bottom: 20px;
+}
+
+.columns__left {
+  margin: 0 20px 0 0;
 }
 
 .header {
@@ -1002,41 +1010,6 @@ span.red {
   line-height: 110%;
 }
 
-.differences {
-  padding: 60px 0;
-  background-color: #FFCBFF;
-}
-
-.differences__inner {
-  margin: 0 40px;
-}
-
-.differences__common {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.differences__common-left {
-  margin: 0 40px 0 0;
-}
-
-.differences__gelmiflor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px 0 0 0;
-}
-
-.differences__gelmiflor-right {
-  margin: 0 0 0 40px;
-}
-
-.differences__btn {
-  text-align: center;
-  margin: 20px 0 0 0;
-}
-
 .order-form {
   overflow: hidden;
   padding: 0 25px;
@@ -1372,46 +1345,9 @@ span.red {
   margin: 25px 0;
 }
 
-.principle {
-  background-color: #FFCBFF;
-}
-
-.principle__inner {
-  padding: 60px 0;
-  margin: 0 40px;
-}
-
-.principle__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.principle__item {
-  margin: 10px;
-  width: 33%;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  text-align: center;
-}
-
-.principle__item p {
-  padding: 20px;
-  margin: 0;
-  text-align: left;
-}
-
-.principle__item-title {
-  margin: 20px 0 0 0;
-  font-size: 36px;
-  line-height: 44px;
-  font-weight: 700;
-  color: #D61A33;
-}
-
 .composition {
-  padding: 60px 0;
+  position: relative;
+  background-color: #fff;
 }
 
 .composition__item {
@@ -1423,6 +1359,42 @@ span.red {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.instruction {
+  background-color: #DCF4FF;
+  position: relative;
+}
+
+.instruction__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.instruction__item {
+  margin: 20px;
+}
+
+.reviews {
+  position: relative;
+  background-color: #fff;
+}
+
+.reviews__columns-left {
+  margin-right: 40px;
+}
+
+.problems {
+  position: relative;
+  background-color: #DCF4FF;
+}
+
+.prophylaxis {
+  position: relative;
+  background-color: #fff;
 }
 
 .pharmacology {
@@ -1464,23 +1436,6 @@ span.red {
 
 .pharmacology__confa-2 {
   margin: 0 0 0 40px;
-}
-
-.instruction__inner {
-  padding: 60px 0;
-  margin: 0 40px;
-}
-
-.instruction__items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-}
-
-.instruction__item {
-  margin: 20px;
 }
 
 .complications {
@@ -2371,28 +2326,6 @@ ul li.footer__item {
     padding: 10px;
   }
 
-  .differences__common {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .differences__common-left {
-    margin: 0 0 20px 0;
-  }
-
-  .differences__gelmiflor {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
-  .differences__gelmiflor-right {
-    margin: 0 0 20px 0;
-  }
-
   .principle__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2402,10 +2335,6 @@ ul li.footer__item {
 
   .principle__item {
     width: 100%;
-  }
-
-  .composition__inner {
-    margin: 0 40px;
   }
 
   .pharmacology__drug {
@@ -2623,6 +2552,10 @@ ul li.footer__item {
             flex-direction: column;
   }
 
+  .columns__left {
+    margin: 0 0px 20px 0;
+  }
+
   .hero__list {
     max-width: 53%;
   }
@@ -2691,21 +2624,13 @@ ul li.footer__item {
   .non-treatment__columns-right::before {
     display: none;
   }
+
+  .reviews__columns-left {
+    margin: 0 0 40px 0;
+  }
 }
 
 @media (max-width: 768px) {
-  .countdown__item {
-    min-width: 60px;
-    border-radius: 10%;
-    padding: 5px;
-    margin: 0 5px;
-  }
-
-  .countdown__item span {
-    font-size: 24px;
-    font-weight: 700;
-  }
-
   .btn-buy {
     margin: 10px 0px 10px 0;
   }
@@ -2878,10 +2803,6 @@ ul li.footer__item {
 
   .how__symptoms-image img {
     max-width: 600px;
-  }
-
-  .composition__inner {
-    margin: 0 40px;
   }
 
   .composition__item {
@@ -3127,7 +3048,7 @@ ul li.footer__item {
   }
 
   .container {
-    padding: 40px 20px;
+    padding: 40px 40px;
   }
 
   .btn-buy {
@@ -3385,24 +3306,6 @@ ul li.footer__item {
     padding: 24px 48px;
   }
 
-  .countdown h3 {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .countdown__item {
-    min-width: 40px;
-    border-radius: 10%;
-    padding: 3px 0px;
-    margin: 0 5px;
-    font-size: 12px;
-  }
-
-  .countdown__item span {
-    font-size: 24px;
-    font-weight: 700;
-  }
-
   h3 {
     font-size: 22px;
     line-height: 24px;
@@ -3483,14 +3386,6 @@ ul li.footer__item {
     max-width: 300px;
   }
 
-  .differences__common-left img {
-    max-width: 300px;
-  }
-
-  .differences__gelmiflor-right img {
-    max-width: 300px;
-  }
-
   .buy__price-new {
     font-size: 28px;
     line-height: 34px;
@@ -3531,31 +3426,6 @@ ul li.footer__item {
   }
 
   .prevention__item-section img {
-    max-width: 300px;
-  }
-
-  .warning {
-    margin: 10px;
-  }
-
-  .warning p {
-    margin: 20px;
-  }
-
-  .warning::before {
-    display: none;
-  }
-
-  .warning p {
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .how__column-2 img {
-    max-width: 300px;
-  }
-
-  .how__symptoms-image img {
     max-width: 300px;
   }
 
@@ -3672,10 +3542,6 @@ ul li.footer__item {
     margin: 0px 0 10px 0;
   }
 
-  .instruction__inner {
-    margin: 0 20px;
-  }
-
   .instruction__image img {
     max-width: 260px;
   }
@@ -3706,7 +3572,7 @@ ul li.footer__item {
   }
 
   .container {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
 
   .btn-buy {

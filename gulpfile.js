@@ -168,7 +168,7 @@ gulp.task('avif', function () {
 //     .pipe(browserSync.stream())
 // });
 
-let build = gulp.series(clean, gulp.parallel(images, js, css, html, fonts));
+let build = gulp.series(gulp.parallel(images, js, css, html, fonts));
 let watch = gulp.parallel(build, watchFiles, browsersync);
 
 // exports.fontsStyle = fontsStyle;

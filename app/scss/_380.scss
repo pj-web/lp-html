@@ -12,26 +12,7 @@
         padding: 24px 48px;
     }
 
-    .countdown {
-
-        h3 {
-            font-size: 14px;
-            line-height: 16px;
-        }
-
-        &__item{
-            min-width: 40px;
-            border-radius: 10%;
-            padding: 3px 0px;
-            margin: 0 5px;
-            font-size: 12px;
     
-            span {
-                font-size: 24px;
-                font-weight: 700;
-            }
-        }
-    }
 
     h3 {
         font-size: 22px;
@@ -171,19 +152,6 @@
        
     }
 
-    .differences {
-        &__common-left {
-            img {
-                max-width: 300px;
-            }
-        }
-        &__gelmiflor-right {
-            img {
-                max-width: 300px;
-            }
-        }
-    }
-
     .buy {
 
         &__price-new {
@@ -283,37 +251,7 @@
     }
 }
 
-    .warning {
-       & p {margin: 20px;}
-            
-       &::before {
-           display: none;
-        }
-        
-        
-        margin: 10px;
-            p {
-                font-size: 16px;
-                line-height: 18px;
-                
-            }
-    }
-
-    .how {
     
-        &__column-2 {
-            img {
-                max-width: 300px;
-            }
-            
-        }
-
-        &__symptoms-image {
-            img {
-            max-width: 300px;
-           }
-        }
-    }
 
     
 
@@ -497,7 +435,7 @@
 
     .instruction {
         &__inner {
-            margin: 0 20px;
+            
         }
         &__image {
             img {

@@ -295,20 +295,6 @@
     
     
     
-    .differences {
-        &__common {
-            flex-direction: column;
-        }
-        &__common-left {
-            margin: 0 0 20px 0;
-        }
-        &__gelmiflor {
-            flex-direction: column-reverse;
-        }
-        &__gelmiflor-right {
-            margin: 0 0 20px 0;
-        }
-    }
     
        
     
@@ -325,7 +311,7 @@
         
     
             &__inner {
-                margin: 0 40px;
+                
             }
         
             &__items {

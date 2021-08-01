@@ -437,7 +437,8 @@ document.addEventListener('keydown', function (e) {
         }, 300);
     }
 
- 
+
+
 
     ymaps.ready(init);
     function init(){
