@@ -117,4 +117,30 @@
 		}
     }
 
+    .pharmacies {
+
+        &__columns {
+            align-items: start;
+            padding-left: 40px;
+
+            .columns__left, .columns__right {
+                width: 80%;
+            }
+            .columns__left {
+                margin: 0px;
+            }
+
+        }
+        
+    }
+
+    .hero-pages {
+
+    
+        &__text {
+            max-width: 33%;
+
+        }
+    }
+
 }

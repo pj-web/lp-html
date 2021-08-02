@@ -324,151 +324,19 @@
             &__item-section {
             }
         }
-    
-    
-            .pharmacology {
-    
-                &__inner {
-                }
-    
-                &__drug {
-                    flex-direction: column-reverse;
-                }
-    
-                &__drug-1 {
-                }
-    
-                &__drug-2 {
-                }
-    
-                &__confa {
-                    flex-direction: column-reverse;
-                }
-    
-                &__confa-1 {
-                }
-    
-                &__confa-2 {
-                    margin: 0 0 20px 0;
-                }
-        }
-    
-        .complications {
-    
-            &__inner {
-            }
-    
-            &__columns {
-                flex-direction: column-reverse;
-                margin: 0;
-            }
-    
-            &__column-1 {
-                margin: 0 0 40px 0;
-            }
-    
-            &__column-2 {
-                margin: 0 0 0 40px;
-            }
-        }
-    
-        .proof {
-    
-            &__inner {
-            }
-    
-            &__items {
-                grid-template-columns: repeat(2, 1fr);
-            }
-    
-            &__item {
-            }
-    
-            &__item-title {
-            }
-        }
-    
-    
-    
-    
-    
-    
-        .how {
-    
-            &__inner {
-                margin: 0 40px;
-            }
-        
-            &__columns {
-                flex-direction: column-reverse;
-                
-            }
-        
-            &__column-1 {
-                width: 100%;
-                
-            }
-        
-            &__column-2 {
-                width: 100%;
-                margin: 0 0px 40px 0;
-                 
-            }
-    
-            &__symptoms {
-                flex-direction: column;
-            }
-        
-            &__symptoms-image {
-                margin: 0 0px 40px 0;
-            }
-    
-            
-            
-        }
-    
-        .benefits {
-    
-            &__inner {
-                margin: 0 40px;
-            }
-    
-            &__list {
-            }
-    }
-    
-    .details {
-        
-    
-        &__inner {
-            margin: 0 40px;
-        }
-    }
-    
-    
-    
-    .conditions {
-        &__inner {
-            margin: 0 40px;
-        }
-    
-        &__buy-form {
-            margin: 0 60px;
-        }
-    }
-    
+ 
     
         .pharmacies {
             &__inner {
-                margin: 0 40px;
+                
             }
         
             &__items {
-                max-width: 1000px;
+                
             }
         
             &__item {
-                max-width: 900px;
+                
                 
             }
         }
@@ -505,23 +373,23 @@
             }
     
             &__title {
-                font-size: 34px;
+                // font-size: 34px;
             }
     
             &__small-title {
-                font-size: 14px;
-                line-height: 16px;
+                // font-size: 14px;
+                // line-height: 16px;
             }
     
             &__sub-title {
-                font-size: 14px;
+                // font-size: 14px;
             }
     
             &__image {
-                img {
-                    max-width: 250px;
-                    margin-top: 40px;
-                }
+                // img {
+                //     max-width: 250px;
+                //     margin-top: 40px;
+                // }
             }
     
             &__buttons {
@@ -602,7 +470,7 @@
         //------------------------------
         .contacts {
             &__inner {
-                margin: 0 40px;
+                
             }
             &__team {
                 grid-template-columns: repeat(2, 1fr);

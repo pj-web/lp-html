@@ -504,7 +504,7 @@ span.red {
   margin: 0px 0 0 0;
 }
 
-.header__contaner {
+.header__container {
   max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
@@ -1397,107 +1397,6 @@ span.red {
   background-color: #fff;
 }
 
-.pharmacology {
-  background-color: #FFCBFF;
-}
-
-.pharmacology__inner {
-  padding: 60px 0;
-  margin: 0 40px;
-}
-
-.pharmacology__drug {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.pharmacology__drug-1 {
-  margin: 0 40px 20px 0;
-}
-
-.pharmacology__confa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.pharmacology__confa-2 {
-  margin: 0 0 0 40px;
-}
-
-.complications {
-  background-color: #FFCBFF;
-}
-
-.complications__inner {
-  padding: 60px 0;
-  margin: 0 40px;
-}
-
-.complications__columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 40px 0;
-}
-
-.complications__column-1 {
-  margin: 0 40px 0 0;
-}
-
-.proof__inner {
-  padding: 60px 0;
-  margin: 0 40px;
-}
-
-.proof__items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.proof__item {
-  text-align: center;
-  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  margin: 10px;
-}
-
-.proof__item-title {
-  padding-top: 10px;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 78px;
-  color: #80B91D;
-}
-
-.proof p {
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 0;
-}
-
-.proof img {
-  padding-top: 10px;
-}
-
 .btn-buy-form {
   display: inline-block;
   font-weight: 700;
@@ -1526,73 +1425,6 @@ span.red {
   -webkit-transform: translate(0px, 3px);
       -ms-transform: translate(0px, 3px);
           transform: translate(0px, 3px);
-}
-
-.how {
-  background-color: #FFCBFF;
-}
-
-.how__inner {
-  padding: 60px 0;
-  margin: 0 40px;
-}
-
-.how__columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.how__column-2 {
-  margin: 0 0 0 20px;
-}
-
-.how__symptoms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.how__symptoms-image {
-  margin: 0 20px 0 0;
-}
-
-.how__symptoms-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.details {
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 60px 0;
-}
-
-.details__photo {
-  text-align: center;
 }
 
 .footer {
@@ -1673,6 +1505,7 @@ span.red {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
 }
 
 .footer__copywright-logo {
@@ -1683,19 +1516,42 @@ span.red {
   max-width: 140px;
 }
 
+.footer__notification {
+  font-size: 12px;
+  line-height: 14px;
+}
+
 ul li.footer__item {
   list-style: none;
   margin-left: -20px;
 }
 
 .pharmacies {
-  padding: 60px 0;
+  position: relative;
   background-color: #e2e2e2;
 }
 
 .pharmacies h2,
 .pharmacies h3 {
   margin: 10px 0 10px 0;
+}
+
+.pharmacies__columns {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pharmacies__columns .columns__left,
+.pharmacies__columns .columns__right {
+  width: 40%;
+}
+
+.pharmacies__columns .columns__left {
+  margin-right: 80px;
 }
 
 .pharmacies__items {
@@ -1886,12 +1742,16 @@ ul li.footer__item {
 }
 
 .hero-pages {
-  background-color: #FFCBFF;
-  padding: 0px 0 0px;
+  background-color: #DCF4FF;
+}
+
+.hero-pages__container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero-pages__content {
-  padding: 60px 0 10px;
+  padding: 30px 40px 0px;
   color: #2a2a2a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1899,8 +1759,9 @@ ul li.footer__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 0px;
 }
 
@@ -1929,7 +1790,7 @@ ul li.footer__item {
 
 .hero-pages__small-title {
   font-size: 26px;
-  line-height: 44px;
+  line-height: 28px;
   letter-spacing: -0.02em;
   margin: 0 0 20px 0;
   -webkit-transform: translate(0px, 120%);
@@ -1973,6 +1834,38 @@ ul li.footer__item {
 
 .hero-pages__contacts {
   margin: 0 0 20px 0;
+}
+
+.hero-pages__social {
+  padding-bottom: 10px;
+}
+
+.hero-pages__social p {
+  margin: 0;
+}
+
+.hero-pages__social-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.hero-pages__social-vk {
+  margin: 0 30px 0 0;
+}
+
+.hero-pages__social-vk img {
+  max-width: 40px;
+}
+
+.hero-pages__social-ok img {
+  max-width: 40px;
 }
 
 .hero-pages__btn-1 {
@@ -2160,16 +2053,6 @@ ul li.footer__item {
   font-size: 14px;
 }
 
-@media screen and (max-width: 1400px) {
-  .section3 {
-    padding-top: 160px;
-  }
-
-  .section3:before {
-    display: none;
-  }
-}
-
 @media (max-width: 1200px) {
   .header__logo img {
     max-width: 140px;
@@ -2337,104 +2220,6 @@ ul li.footer__item {
     width: 100%;
   }
 
-  .pharmacology__drug {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
-  .pharmacology__confa {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
-  .pharmacology__confa-2 {
-    margin: 0 0 20px 0;
-  }
-
-  .complications__columns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin: 0;
-  }
-
-  .complications__column-1 {
-    margin: 0 0 40px 0;
-  }
-
-  .complications__column-2 {
-    margin: 0 0 0 40px;
-  }
-
-  .proof__items {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .how__inner {
-    margin: 0 40px;
-  }
-
-  .how__columns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
-  .how__column-1 {
-    width: 100%;
-  }
-
-  .how__column-2 {
-    width: 100%;
-    margin: 0 0px 40px 0;
-  }
-
-  .how__symptoms {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .how__symptoms-image {
-    margin: 0 0px 40px 0;
-  }
-
-  .benefits__inner {
-    margin: 0 40px;
-  }
-
-  .details__inner {
-    margin: 0 40px;
-  }
-
-  .conditions__inner {
-    margin: 0 40px;
-  }
-
-  .conditions__buy-form {
-    margin: 0 60px;
-  }
-
-  .pharmacies__inner {
-    margin: 0 40px;
-  }
-
-  .pharmacies__items {
-    max-width: 1000px;
-  }
-
-  .pharmacies__item {
-    max-width: 900px;
-  }
-
   .popup__content {
     max-width: 600px;
   }
@@ -2456,24 +2241,6 @@ ul li.footer__item {
 
   .hero-pages__text {
     margin: 20px 0 0 0;
-  }
-
-  .hero-pages__title {
-    font-size: 34px;
-  }
-
-  .hero-pages__small-title {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .hero-pages__sub-title {
-    font-size: 14px;
-  }
-
-  .hero-pages__image img {
-    max-width: 250px;
-    margin-top: 40px;
   }
 
   .hero-pages__contacts {
@@ -2524,10 +2291,6 @@ ul li.footer__item {
 
   .customers__avatar {
     padding: 0px 0 0 25px;
-  }
-
-  .contacts__inner {
-    margin: 0 40px;
   }
 
   .contacts__team {
@@ -2628,6 +2391,26 @@ ul li.footer__item {
   .reviews__columns-left {
     margin: 0 0 40px 0;
   }
+
+  .pharmacies__columns {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-left: 40px;
+  }
+
+  .pharmacies__columns .columns__left,
+  .pharmacies__columns .columns__right {
+    width: 80%;
+  }
+
+  .pharmacies__columns .columns__left {
+    margin: 0px;
+  }
+
+  .hero-pages__text {
+    max-width: 33%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2653,7 +2436,7 @@ ul li.footer__item {
     max-width: 380px;
   }
 
-  .header__contaner {
+  .header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2797,14 +2580,6 @@ ul li.footer__item {
     line-height: 20px;
   }
 
-  .how__column-2 img {
-    max-width: 600px;
-  }
-
-  .how__symptoms-image img {
-    max-width: 600px;
-  }
-
   .composition__item {
     margin-top: 20px;
   }
@@ -2847,18 +2622,6 @@ ul li.footer__item {
 
   .conditions__buy-form {
     margin: 0 20px;
-  }
-
-  .pharmacies__inner {
-    margin: 0 20px;
-  }
-
-  .pharmacies__items {
-    max-width: 400px;
-  }
-
-  .pharmacies__item {
-    max-width: 300px;
   }
 
   .footer__inner {
@@ -2918,41 +2681,34 @@ ul li.footer__item {
   }
 
   .hero-pages__content {
-    margin: 0 20px;
-    padding: 30px 0 10px 0;
+    padding: 30px 0 0px 0;
   }
 
   .hero-pages__text {
-    margin: 20px 0 0 0;
+    max-width: 33%;
   }
 
   .hero-pages__title {
-    font-size: 20px;
+    font-size: 38px;
+    line-height: 48px;
   }
 
   .hero-pages__small-title {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .hero-pages__sub-title {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .hero-pages__image {
+    max-width: 30%;
   }
 
   .hero-pages__image img {
-    max-width: 250px;
-    margin-top: 10px;
-  }
-
-  .hero-pages__contacts {
-    margin: 40px 0 0px 0;
-    font-size: 12px;
-  }
-
-  .hero-pages__btn-1 a {
-    padding: 10px 18px 10px 18px;
-    font-size: 14px;
+    max-width: 100%;
   }
 
   .hero-pages .btn-buy {
@@ -3020,6 +2776,63 @@ ul li.footer__item {
   }
 }
 
+@media (max-width: 599px) {
+  .header__container {
+    min-height: 60px;
+    padding: 0 20px;
+  }
+
+  .header__logo img {
+    max-width: 60px;
+  }
+
+  .header__item-1 {
+    display: none;
+  }
+
+  .header__item-2 {
+    display: none;
+  }
+
+  .hero-pages__container {
+    margin: 0 20px;
+  }
+
+  .hero-pages__content {
+    padding: 10px 0 0 0;
+  }
+
+  .hero-pages__text {
+    max-width: 28%;
+  }
+
+  .hero-pages__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .hero-pages__small-title {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0 10px 0;
+  }
+
+  .hero-pages__sub-title {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .hero-pages__contacts {
+    margin: 40px 0 0px 0;
+  }
+
+  .hero-pages .btn-buy {
+    padding: 8px 8px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
 @media (max-width: 493px) {
   .order-form .order-form-product-image {
     max-width: 228px;
@@ -3058,22 +2871,6 @@ ul li.footer__item {
   .buy__form input[type=text],
   .buy__form input[type=text] {
     font-size: 20px;
-  }
-
-  .blockquote__warning p {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .blockquote__warning::before {
-    display: none;
-  }
-
-  .blockquote__lightbox p {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .blockquote__lightbox::before {
-    display: none;
   }
 
   .header__logo img {
@@ -3150,18 +2947,6 @@ ul li.footer__item {
     max-width: 380px;
   }
 
-  .pharmacology__drug-1 {
-    margin: 0 0 20px 0;
-  }
-
-  .pharmacology__drug-1 img {
-    max-width: 360px;
-  }
-
-  .pharmacology__confa-2 img {
-    max-width: 360px;
-  }
-
   .instruction__items {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -3171,45 +2956,8 @@ ul li.footer__item {
     margin: 0;
   }
 
-  .complications__column-1 img {
-    max-width: 360px;
-  }
-
-  .complications__column-2 {
-    margin: 0 0 0 20px;
-  }
-
-  .proof__items {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .how__column-2 img {
-    max-width: 340px;
-  }
-
-  .how__symptoms-image img {
-    max-width: 340px;
-  }
-
-  .prevention__item-section {
-    margin: 0 0 20px 0;
-  }
-
-  .prevention__item-section img {
-    max-width: 360px;
-  }
-
-  .pharmacies__inner {
-    margin: 0 20px;
-  }
-
-  .pharmacies__items {
-    max-width: 380px;
-  }
-
-  .pharmacies__item {
-    max-width: 280px;
+  .pharmacies__columns {
+    padding-left: 0px;
   }
 
   .pharmacies__item-text {
@@ -3217,56 +2965,66 @@ ul li.footer__item {
   }
 
   .hero-pages {
-    padding: 10px 0 0 0;
+    padding: 20px 0 10px 0;
+  }
+
+  .hero-pages__container {
+    margin: 0px;
   }
 
   .hero-pages__content {
+    margin: 0 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .hero-pages__text {
-    margin: 40px 0 0 0;
+    max-width: 50%;
+    margin: 0;
   }
 
   .hero-pages__title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .hero-pages__small-title {
+    font-size: 16px;
+    line-height: 18px;
     margin: 0 0 10px 0;
   }
 
-  .hero-pages__image img {
-    max-width: 180px;
+  .hero-pages__sub-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .hero-pages__image {
+    max-width: 50%;
   }
 
   .hero-pages__buttons {
+    margin-top: -30px;
     width: 100%;
     text-align: center;
   }
 
   .hero-pages__contacts {
-    margin: 10px 0 10px 0;
-    font-size: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: none;
+    margin: 0px;
   }
 
   .hero-pages__btn-1 {
     margin: 0px 0 10px 0;
   }
 
-  .hero-pages__btn-2 {
-    margin: 0px 0 10px 0;
+  .hero-pages .btn-buy {
+    padding: 20px 24px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .footer__copywright {
@@ -3320,7 +3078,7 @@ ul li.footer__item {
     opacity: 10%;
   }
 
-  .header__contaner {
+  .header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -3488,60 +3246,6 @@ ul li.footer__item {
     padding: 10px;
   }
 
-  .hero-pages {
-    padding: 10px 0 0 0;
-  }
-
-  .hero-pages__content {
-    padding: 25px 0 5px;
-  }
-
-  .hero-pages__text {
-    margin: 40px 0 0 0;
-  }
-
-  .hero-pages__title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .hero-pages__small-title {
-    margin: 0 0 10px 0;
-  }
-
-  .hero-pages__sub-title {
-    font-size: 9px;
-    line-height: 12px;
-  }
-
-  .hero-pages__image img {
-    max-width: 160px;
-  }
-
-  .hero-pages__buttons {
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero-pages__contacts {
-    margin: 5px 0 5px 0;
-    font-size: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .hero-pages__contacts div {
-    margin: 0 10px;
-  }
-
-  .hero-pages__btn-1 {
-    margin: 0px 0 10px 0;
-  }
-
   .instruction__image img {
     max-width: 260px;
   }
@@ -3553,10 +3257,6 @@ ul li.footer__item {
   #map {
     width: 300px;
     height: 300px;
-  }
-
-  .contacts__inner {
-    margin: 0 20px;
   }
 
   .contacts__map {
@@ -3597,30 +3297,6 @@ ul li.footer__item {
     max-width: 264px;
   }
 
-  .differences__common-left img {
-    max-width: 250px;
-  }
-
-  .differences__gelmiflor-right img {
-    max-width: 250px;
-  }
-
-  .pharmacology__drug-1 img {
-    max-width: 280px;
-  }
-
-  .pharmacology__confa-2 img {
-    max-width: 280px;
-  }
-
-  .how__column-2 img {
-    max-width: 260px;
-  }
-
-  .how__symptoms-image img {
-    max-width: 260px;
-  }
-
   .pharmacies__inner {
     margin: 0 10px;
   }
@@ -3637,70 +3313,17 @@ ul li.footer__item {
     max-width: 260px;
   }
 
-  .instruction__image img {
-    max-width: 240px;
-  }
-
-  .complications__column-1 img {
-    max-width: 280px;
-  }
-
-  .complications__column-2 {
-    margin: 0 0 0 0px;
-  }
-
-  .hero-pages {
-    padding: 10px 0 0 0;
-  }
-
-  .hero-pages__content {
-    padding: 25px 0 5px;
-  }
-
-  .hero-pages__text {
-    margin: 30px 0 0 0;
-  }
-
   .hero-pages__title {
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .hero-pages__small-title {
-    margin: 0 0 10px 0;
+    font-size: 32px;
+    line-height: 42px;
   }
 
   .hero-pages__sub-title {
-    font-size: 8px;
-    line-height: 10px;
-  }
-
-  .hero-pages__image img {
-    max-width: 125px;
+    font-size: 16px;
   }
 
   .hero-pages__buttons {
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero-pages__contacts {
-    margin: 5px 0 5px 0;
-    font-size: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .hero-pages__contacts div {
-    margin: 0 10px;
-  }
-
-  .hero-pages__btn-1 {
-    margin: 0px 0 10px 0;
+    margin-top: 0px;
   }
 
   #map {

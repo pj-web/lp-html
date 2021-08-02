@@ -32,32 +32,6 @@
         font-size: 20px;
     }
 
-    .blockquote {
-     
-    
-        &__warning {
- 
-            p {
-                padding: 20px 20px 20px 20px;
-            }
-
-            &::before {
-                display: none;
-            }
-        }
-
-        &__lightbox {
-
-            p {
-                padding: 20px 20px 20px 20px;
-            }
-
-            &::before {
-                display: none;
-            }
-        }
-    }
-
     .header {
 
         &__logo {
@@ -195,22 +169,7 @@
     
     
 
-    .pharmacology {
-
-         &__drug-1 {
-            margin: 0 0 20px 0;
-             img {
-                 max-width: 360px;
-             }
-        }
-
-        &__confa-2 {
-            
-            img {
-                max-width: 360px;
-            }
-        }
-    }
+    
 
     .instruction {
 
@@ -228,93 +187,21 @@
         }
     }
 
-    .complications {
-
-		&__column-1 {
-            img {
-                max-width: 360px;
-            }
-		}
-        &__column-2 {
-            margin: 0 0 0 20px;
-		}
-    }
-
-    .proof {
-
-		&__inner {
-		}
-
-		&__items {
-            grid-template-columns: repeat(1, 1fr);
-		}
-
-		&__item {
-		}
-
-		&__item-title {
-		}
-    }
-
-    .how {
-    
-        &__column-2 {
-            img {
-                max-width: 340px;
-            }
-        }
-
-        &__symptoms-image {
-                img {
-                max-width: 340px;
-            }
-        }
-        &__symptoms-text {
-           
-        }
-    }
-    .prevention {
-
-        &__inner {
-            
-        }
-    
-        &__items {
-        }
-
-        &__item {
-
-        }
-    
-        &__item:nth-child(odd) {
-
-            
-        }
-
-        &__item:nth-child(even) {
-
-            
-        }
-    
-        &__item-section {
-            margin: 0 0 20px 0;
-            img {
-                max-width: 360px;
-            }
-        }
-    }
-
     .pharmacies {
         &__inner {
-            margin: 0 20px;
+            
+        }
+
+        &__columns {
+            padding-left: 0px;
         }
     
         &__items {
-            max-width: 380px;
+            // max-width: 380px;
         }
     
         &__item {
-            max-width: 280px;
+            // max-width: 280px;
             
         }
         &__item-text {
@@ -323,56 +210,74 @@
     }
 
     .hero-pages {
-        padding: 10px 0 0 0;
+        padding: 20px 0 10px 0;
+
+        &__container {
+            margin: 0px;
+        }
 
 		&__content {
+            margin: 0 20px;
             flex-wrap: wrap;
-            align-items:flex-start;
+            // align-items:flex-start;
+            justify-content: space-between;
 		}
 
 		&__text {
-            // width: 50%;
-            margin: 40px 0 0 0;
+            max-width: 50%;
+            margin: 0;
+            // margin: 40px 0 0 0;
+            // order: 1;
 		}
 
 		&__title {
-            font-size: 20px;
-            line-height: 28px;
+            font-size: 36px;
+            line-height: 44px;
 		}
 
 		&__small-title {
+            font-size: 16px;
+            line-height: 18px;
             margin: 0 0 10px 0;
 		}
 
         &__sub-title {
-
+            font-size: 18px;
+            line-height: 20px;
         }
 
 		&__image {
-            img {
-                max-width: 180px;
-            }
+            max-width: 50%;
+            // order: 3;
+            // img {
+            //     max-width: 180px;
+            // }
 		}
 
 		&__buttons {
+            margin-top: -30px;
             width: 100%;
             text-align: center;
+            // order: 2;
 		}
 
         &__contacts {
-            margin: 10px 0 10px 0;
-            font-size: 12px;
-            display: flex;
-            justify-content: space-between;
+            display: none;
+            margin: 0px;
+            // font-size: 12px;
+            // display: flex;
+            // justify-content: space-between;
         }
 
 		&__btn-1 {
             margin: 0px 0 10px 0;
 		}
 
-		&__btn-2 {
-            margin: 0px 0 10px 0;
-		}
+       .btn-buy {
+            padding: 20px 24px;
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
 
     .footer {

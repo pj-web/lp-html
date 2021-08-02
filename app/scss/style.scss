@@ -367,7 +367,7 @@ span.red {
     z-index: 10;
     margin: 0px 0 0 0;
 
-		&__contaner {
+		&__container {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -1254,27 +1254,6 @@ span.red {
     clear: both;
     margin: 25px 0
   }
-  
-
-//   .order-form-input-field-wrapper {
-//     width:100%;
-//     height: 80px;
-//     border:2px solid #D61A33;
-//     border-radius:5px;
-//     background:#fff;
-//     font-size: 24px;
-//     line-height: 30px;
-//     color: #000;
-//     text-indent:34px;
-//     margin-top:11px;
-//     -webkit-appearance:none;
-//     -moz-appearance:none;
-//     appearance:none;
-//     margin: 0 0 40px 0;
-
-//   }
-
-
 
 .composition {
     position: relative;
@@ -1356,110 +1335,6 @@ span.red {
 
 
 
-
-
-
-
-
-.pharmacology {
-    background-color: #FFCBFF;
-
-    &__inner {
-        padding: 60px 0;
-        margin: 0 40px;
-    }
-
-    &__drug {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__drug-1 {
-        margin: 0 40px 20px 0;
-    }
-
-    &__drug-2 {
-        
-    }
-
-    &__confa {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__confa-1 {
-    }
-
-    &__confa-2 {
-        margin: 0 0 0 40px;
-    }
-}
-
-
-
-.complications {
-    background-color: #FFCBFF;
-
-    &__inner {
-        padding: 60px 0;
-        margin: 0 40px;
-    }
-
-    &__columns {
-        display: flex;
-        align-items: center;
-        margin: 0 0 40px 0;
-    }
-
-    &__column-1 {
-        margin: 0 40px 0 0;
-    }
-
-    &__column-2 {
-    }
-}
-
-.proof {
-
-    &__inner {
-        padding: 60px 0;
-        margin: 0 40px;
-    }
-
-    &__items {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    &__item {
-        text-align: center;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        margin: 10px;
-    }
-
-    &__item-title {
-        padding-top: 10px;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 78px;
-        color: #80B91D;
-    }
-
-    p {
-        padding: 10px;
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-
-    img {
-        padding-top: 10px;
-    }
-}
-
-
-
 .btn-buy-form {
     display: inline-block;
     font-weight: 700;
@@ -1483,86 +1358,6 @@ span.red {
 
 
 
-.how {
-    background-color: #FFCBFF;
-
-    &__inner {
-        padding: 60px 0;
-        margin: 0 40px;
-        
-    }
-
-    &__columns {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__column-1 {
-        // width: 50%;
-    }
-
-    &__column-2 {
-        margin: 0 0 0 20px;
-        // width: 50%;
-         
-    }
-
-    &__symptoms {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 40px;
-    }
-
-    &__symptoms-image {
-        margin: 0 20px 0 0;
-    }
-
-    &__symptoms-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }  
-}
-
-
-
-.details {
-    background-repeat: no-repeat;
-    background-position: 50% 30%;
-    background-size: cover;
-    background-attachment: fixed; 
-    padding: 60px 0;
-
-    &__inner {
-    }
-
-    &__official {
-        
-    }
-
-    &__official-1 {
-        
-    }
-
-    &__official-2 {
-    }
-
-    &__price {
-    }
-
-    &__pharmacy {
-    }
-
-    &__delivery {
-    }
-
-    &__photo {
-        text-align: center;
-    }
-}
 
 
 .footer {
@@ -1629,6 +1424,7 @@ span.red {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     &__copywright-logo {
@@ -1641,6 +1437,11 @@ span.red {
 
     &__copywright-text {
     }
+
+    &__notification {
+        font-size: 12px;
+        line-height: 14px;
+    }
        
 }
 
@@ -1650,14 +1451,24 @@ ul li.footer__item {
 }
 
 .pharmacies {
-    padding: 60px 0;
+    position: relative;
     background-color: #e2e2e2;
     
     h2, h3 {
         margin: 10px 0 10px 0;
     }
     
-    
+    &__columns {
+        align-items: flex-start;
+        justify-content: center;
+
+        .columns__left, .columns__right {
+            width: 40%;
+        }
+        .columns__left {
+            margin-right: 80px;
+        }
+    }
 
     &__items {
         max-width: 1200px;
@@ -1829,15 +1640,19 @@ ul li.footer__item {
     text-align: center;
 }
 .hero-pages {
-    background-color: #FFCBFF;
-    padding: 0px 0 0px;
+    background-color: #DCF4FF;
+
+        &__container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
 		&__content {
-            padding: 60px 0 10px;
+            padding: 30px 40px 0px;
             color: #2a2a2a;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             // min-height: 45vh;
             margin: 0 0px;
            
@@ -1872,7 +1687,7 @@ ul li.footer__item {
 
         &__small-title {
             font-size: 26px;
-            line-height: 44px;
+            line-height: 28px;
             letter-spacing: -0.02em;
             margin: 0 0 20px 0;
             transform: translate(0px, 120%);
@@ -1903,6 +1718,34 @@ ul li.footer__item {
 
         &__contacts {
             margin: 0 0 20px 0;
+        }
+
+        &__social {
+            padding-bottom: 10px;
+            p {
+                margin: 0;
+            }
+        }
+
+        &__social-items {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            
+        }
+    
+        &__social-vk {
+            margin: 0 30px 0 0;
+    
+            img {
+                max-width: 40px;
+            }
+        }
+        &__social-ok {
+            
+            img {
+                max-width: 40px;
+            }
         }
 
 		
@@ -2106,19 +1949,11 @@ ul li.footer__item {
 // ---------------------------------------
 
 
-@media screen and (max-width:1400px) {
-    .section3 {
-        padding-top: 160px;
-    }
-    .section3:before {
-        display: none
-    }
-}
-
 
 @import "_1200";
 @import "_1024";
 @import "_768";
+@import "_599";
 @import "_425";
 @import "_380";
 @import "_359";
