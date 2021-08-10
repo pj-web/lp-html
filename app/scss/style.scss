@@ -440,7 +440,7 @@ span.red {
             position: absolute;
             height: 10%;
             width: 100%;
-            transition: all 0.3s ease 0s;
+            transition: all 0.6s ease 0s;
             background-color: #2A2A2A;
 
            
@@ -493,7 +493,7 @@ span.red {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 100px 30px 30px 30px;
-        transition: left 0.3s ease 0s;
+        transition: left 0.6s ease 0s;
         overflow: auto;
 
         &._active {
@@ -506,10 +506,12 @@ span.red {
         display: block;
         text-align: center;
         
+        
     }
 
     &__item {
-        margin-bottom: 0;
+        margin-bottom: 20px;
+        list-style: none;
 
         &::before {
             display: none;
@@ -1638,6 +1640,7 @@ ul li.footer__item {
 
 .pages-title {
     text-align: center;
+    margin-bottom: 20px;
 }
 .hero-pages {
     background-color: #DCF4FF;
@@ -1851,7 +1854,7 @@ ul li.footer__item {
 
 .customers {
     padding: 60px 0px;
-    background-color: #FFCBFF;
+    background-color: #b4ccff;
 
     &__inner {
     }
@@ -1862,7 +1865,7 @@ ul li.footer__item {
     &__item {
         color: #000;
         display: flex;
-        background-color: #e2e2e2;
+        background: linear-gradient(180deg, #E8E8E8 0%, #B1B1B1 100%);
         padding: 10px;
         margin: 20px 20px 40px 20px;
         border-radius: 5px;

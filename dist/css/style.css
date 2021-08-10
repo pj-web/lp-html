@@ -574,9 +574,9 @@ span.red {
   position: absolute;
   height: 10%;
   width: 100%;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
   background-color: #2A2A2A;
 }
 
@@ -634,9 +634,9 @@ span.red {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 100px 30px 30px 30px;
-  -webkit-transition: left 0.3s ease 0s;
-  -o-transition: left 0.3s ease 0s;
-  transition: left 0.3s ease 0s;
+  -webkit-transition: left 0.6s ease 0s;
+  -o-transition: left 0.6s ease 0s;
+  transition: left 0.6s ease 0s;
   overflow: auto;
 }
 
@@ -650,7 +650,8 @@ span.red {
 }
 
 .menu__item {
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  list-style: none;
 }
 
 .menu__item::before {
@@ -1739,6 +1740,7 @@ ul li.footer__item {
 
 .pages-title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .hero-pages {
@@ -1966,7 +1968,7 @@ ul li.footer__item {
 
 .customers {
   padding: 60px 0px;
-  background-color: #FFCBFF;
+  background-color: #b4ccff;
 }
 
 .customers__item {
@@ -1974,7 +1976,9 @@ ul li.footer__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #e2e2e2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E8E8E8), to(#B1B1B1));
+  background: -o-linear-gradient(top, #E8E8E8 0%, #B1B1B1 100%);
+  background: linear-gradient(180deg, #E8E8E8 0%, #B1B1B1 100%);
   padding: 10px;
   margin: 20px 20px 40px 20px;
   border-radius: 5px;
