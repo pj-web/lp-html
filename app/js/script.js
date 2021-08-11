@@ -158,15 +158,15 @@ var prices = {
 		money: 'тенге',
 		tel: '+7',
 	},
-	BY: {
-		country: 'Беларусь',
-		country1: 'Беларуси',
-		country2: 'Беларуси',
-		old: '55',
-		new: '5',
-		money: 'руб.',
-		tel: '+375',
-	},
+	// BY: {
+	// 	country: 'Беларусь',
+	// 	country1: 'Беларуси',
+	// 	country2: 'Беларуси',
+	// 	old: '55',
+	// 	new: '5',
+	// 	money: 'руб.',
+	// 	tel: '+375',
+	// },
 };
 
 var changePrice = function changePrice(elems, value) {
