@@ -140,15 +140,15 @@ if (isMobile.any()) {
 
 
 var prices = {
-	RU: {
-		country: 'Россия',
-		country1: 'России',
-		country2: 'России',
-		old: '1499',
-		new: '168',
-		money: 'руб.',
-		tel: '+7',
-	},
+	// RU: {
+	// 	country: 'Россия',
+	// 	country1: 'России',
+	// 	country2: 'России',
+	// 	old: '1499',
+	// 	new: '168',
+	// 	money: 'руб.',
+	// 	tel: '+7',
+	// },
 	KZ: {
 		country: 'Казахстан',
 		country1: 'Казахстана',
@@ -158,15 +158,15 @@ var prices = {
 		money: 'тенге',
 		tel: '+7',
 	},
-	// BY: {
-	// 	country: 'Беларусь',
-	// 	country1: 'Беларуси',
-	// 	country2: 'Беларуси',
-	// 	old: '55',
-	// 	new: '5',
-	// 	money: 'руб.',
-	// 	tel: '+375',
-	// },
+	BY: {
+		country: 'Беларусь',
+		country1: 'Беларуси',
+		country2: 'Беларуси',
+		old: '55',
+		new: '5',
+		money: 'BYN',
+		tel: '+375',
+	},
 };
 
 var changePrice = function changePrice(elems, value) {
@@ -380,10 +380,6 @@ document.addEventListener('keydown', function (e) {
 // }
 
 // initAll();
-
-
-
-
 
 
 

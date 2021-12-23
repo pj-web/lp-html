@@ -115,7 +115,7 @@ function images() {
     .pipe(src(path.src.img))
     .pipe(imagemin())
     .pipe(dest(path.build.img))
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream());
 }
 
 function fonts(params) {
@@ -149,6 +149,9 @@ gulp.task('avif', function () {
     
     return gulp.src(path.src.img)
     .pipe(gulpAvif())
+    .pipe(dest(path.build.img))
+    .pipe(src(path.build.img))
+    .pipe(imagemin())
     .pipe(dest(path.build.img));
 });
 
