@@ -1947,6 +1947,44 @@ ul li.footer__item {
         }
 }
 
+.description__contents {
+    margin-bottom: 40px;
+  }
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: 33.333%;
+    text-align: center;
+}
+.button-small {
+  border: 1px solid #838383;
+  border-radius: 10px;
+  padding: 10px 0px;
+  font-size: 18px;
+  display: block;
+  margin: 5px;
+}
+.button-small:hover {
+  border: 1px solid #e7e7e7;
+  background-color: #e7e7e7;
+}
+@media (max-width: 768px) {
+  .description__contents {
+    margin-bottom: 20px;
+  }
+  .row {
+    margin-bottom: 0;
+  }
+  .col-4 {
+  width: 100%;
+}
+
+}
+
 // --------------------------------
 
 // ---------------------------------------
